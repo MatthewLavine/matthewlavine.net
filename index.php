@@ -36,7 +36,7 @@
 				<div class="tab-pane fade in active" id="aboutMe">
 					<h2>Hi.</h2>
 					<p>My name is Matthew Lavine</p>
-					<p style="font-size:80%;">I am a sophmore Information Technology Major at the <a target="_blank" href="http://www.njit.edu/">New Jersey Institute of Technology</a>. I currently work at AdvancedGroup.net doing web design and server maintenance. At work I program mainly in ColdFusion and Java, but my work extends into Javascript, AJAX, .NET, ASP, HTML5, CSS3, MYSQL, and PHP.
+					<p style="font-size:80%;">I am a sophomore Information Technology Major at the <a target="_blank" href="http://www.njit.edu/">New Jersey Institute of Technology</a>. I currently work at AdvancedGroup.net doing web design and server maintenance. At work I program mainly in ColdFusion and Java, but my work extends into Javascript, AJAX, .NET, ASP, HTML5, CSS3, MYSQL, and PHP.
 					</p>
 					<p style="font-size:80%;">I am a saxophone player, computer enthusiast, and web designer. I am also the president of the NJIT Society of Musical Arts (SOMA), and the band leader for the SOMA jazz band.
 					</p>
