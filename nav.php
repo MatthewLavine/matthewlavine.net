@@ -37,7 +37,7 @@
         	<!--<li><a href="#">Twitter</a></li>-->
 		<li><a target="_blank" href="http://advancedgroup.net/">AdvancedGroup</a></li>        	
 		<li><a target="_blank" href="https://www.linkedin.com/in/lavine">LinkedIn</a></li>
-         	<li><a target="_blank" href="https://github.com/MatthewLavine/">GitHub</a></li>
+         	<li><a target="_blank" href="https://github.com/MatthewLavine/matthewlavine.net">GitHub</a></li>
 	 </ul>
 </div><!-- /.navbar-collapse -->
 
