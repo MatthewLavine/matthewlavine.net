@@ -62,7 +62,7 @@
 												<div class="thumbnail">
 													<div class="caption">
 														<h3>Web Design</h3>
-														<small>I am a front and back end web developer and am skilled in many modern web languages and interactive frameworks.</small>
+														<small>I am employed as a front and back end web developer and am skilled in many modern web languages and interactive frameworks.</small>
 														<p class="card-directions"><a class="btn btn-primary" role="button">More...</a></p>
 													</div>
 												</div>
@@ -96,7 +96,7 @@
 												<div class="thumbnail">
 													<div class="caption">
 														<h3>Administration</h3>
-														<small>I have experience in windows and unix system administration including Active Directory and Group Policy.</small>
+														<small>I have experience in Windows and Unix system administration including Active Directory and Group Policy.</small>
 														<p class="card-directions"><a class="btn btn-primary" role="button">More...</a></p>
 													</div>
 												</div>
@@ -107,9 +107,13 @@
 														<h3>Systems:</h3>
 														<small>
 															<ul class="list-unstyled">
+																<br>
 																<li>Unix User Management</li>
+																<br>
 																<li>Active Directory</li>
+																<br>
 																<li>Windows Group Policy</li>
+																<br>
 																<li>Windows Domains</li>
 															</ul>
 														</small>
