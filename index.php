@@ -62,7 +62,7 @@
 													<div class="caption">
 														<h3>Languages and Frameworks:</h3>
 														<small>
-															<ul style="list-style-type: none;padding:0 0 0 0px;">
+															<ul class="list-unstyled">
 																<li>HTML5 / CSS3</li>
 																<li>ColdFusion</li>
 																<li>PHP</li>
@@ -96,7 +96,7 @@
 													<div class="caption">
 														<h3>Systems:</h3>
 														<small>
-															<ul style="list-style-type: none;padding:0 0 0 0px;">
+															<ul class="list-unstyled">
 																<li>Unix User Management</li>
 																<li>Active Directory</li>
 																<li>Windows Group Policy</li>
@@ -130,7 +130,7 @@
 													<div class="caption">
 														<h3>Experience:</h3>
 														<small>
-															<ul style="list-style-type: none;padding:0 0 0 0px;">
+															<ul class="list-unstyled">
 																<li>Current IT Major at NJIT</li>
 																<br>
 																<li>2 years in the Kittatinny Regional High School IT Department</li>
@@ -161,7 +161,7 @@
 													<div class="caption">
 														<h3>Skills:</h3>
 														<small>
-															<ul style="list-style-type: none;padding:0 0 0 0px;">
+															<ul class="list-unstyled">
 																<li>Data Visualization</li>
 																<li>Data Security</li>
 																<li>Database Design</li>
