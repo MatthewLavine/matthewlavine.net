@@ -18,7 +18,7 @@
 		<link rel="stylesheet" href="css/cards.css">
 		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
-		<link href="css/united.css" rel="stylesheet">	
+		<link href="css/united.min.css" rel="stylesheet">	
     		
 		<!--[if lt IE 9]>
      			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
