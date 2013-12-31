@@ -26,7 +26,7 @@
 		
 		<p class="text-primary">Notice: This website is under active construction!</p>
 		<div class="progress progress-striped active">
-			<div class="progress-bar"  role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+			<div class="progress-bar"  role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo rand(50,90); ?>%">
 				<span class="sr-only">Website Progress: 80% Complete</span>
 			</div>
 		</div>
