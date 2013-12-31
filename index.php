@@ -34,14 +34,16 @@
 		<div class="jumbotron">
 			<div class="tab-content">
 				<div class="tab-pane fade in active" id="aboutMe">
-					<h2>Hi.</h2>
-					<p>My name is Matthew Lavine</p>
-					<p style="font-size:80%;">I am a sophomore Information Technology Major at the <a target="_blank" href="http://www.njit.edu/">New Jersey Institute of Technology</a>. I currently work at AdvancedGroup.net doing web design and server maintenance. At work I program mainly in ColdFusion and Java, but my work extends into Javascript, AJAX, .NET, ASP, HTML5, CSS3, MYSQL, and PHP.
+
+  					<h2>Hi, My Name is Matthew Lavine</h2>
+  					<h2><small>Who am I?</small></h2>
+
+					<p style="font-size:80%;">I am a sophomore Information Technology Major at the <a target="_blank" href="http://www.njit.edu/">New Jersey Institute of Technology</a>. I am currently employed at AdvancedGroup.net doing web design and server maintenance. At work I code mainly in ColdFusion my my personal work extends into many other areas.
 					</p>
 					<p style="font-size:80%;">I am a saxophone player, computer enthusiast, and web designer. I am also the president of the NJIT Society of Musical Arts (SOMA), and the band leader for the SOMA jazz band.
 					</p>
-					<br>
-					
+
+  					<h2><small>What do I do?</small></h2>					
 					<div class="row">
 						<div class="col-lg-6">
 							<div class="row">
