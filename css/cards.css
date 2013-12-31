@@ -2,6 +2,8 @@
 
     /* entire container, keeps perspective */
     .flip-container {
+    margin-bottom: 15px;
+    margin-top: 15px;
     text-align: center;
     font-size: .9em;
     perspective: 1000;

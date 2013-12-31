@@ -43,9 +43,9 @@
 					<br>
 					
 					<div class="row">
-						<div class="col-sm-6 col-md-6">
+						<div class="col-lg-6">
 							<div class="row">
-								<div class="col-sm-6 col-md-6">
+								<div class="col-md-6">
 									<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 										<div class="flipper">
 											<div class="front">
@@ -79,7 +79,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-sm-6 col-md-6">
+								<div class="col-md-6">
 									<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 										<div class="flipper">
 											<div class="front">
@@ -111,9 +111,9 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-md-6">
+						<div class="col-lg-6">
 							<div class="row">
-								<div class="col-sm-6 col-md-6">
+								<div class="col-md-6">
 									<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 										<div class="flipper">
 											<div class="front">
@@ -144,7 +144,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-sm-6 col-md-6">
+								<div class="col-md-6">
 									<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 										<div class="flipper">
 											<div class="front">
