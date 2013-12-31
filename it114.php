@@ -10,14 +10,14 @@
 				<h4>Final Project</h4>
 						<br>
 						<p class="text-info">Server</p>
-						<a href="it114/Whiteboard/WhiteboardServer.java" download>WhiteboardServer.java</a>
+						<a href="download/IT114_Whiteboard/WhiteboardServer.java" download>WhiteboardServer.java</a>
 						<br>
-						<a href="it114/Whiteboard/DataObject.java" download>DataObject.java</a>
+						<a href="download/IT114_Whiteboard/DataObject.java" download>DataObject.java</a>
 					<br><br>
 					<p class="text-info">Client</p>
-						<a href="it114/Whiteboard/Client.java" download>Client.java</a>
+						<a href="download/IT114_Whiteboard/Client.java" download>Client.java</a>
 						<br>
-						<a href="it114/Whiteboard/DataObject.java" download>DataObject.java</a>
+						<a href="download/IT114_Whiteboard/DataObject.java" download>DataObject.java</a>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
