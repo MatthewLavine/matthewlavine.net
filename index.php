@@ -40,12 +40,149 @@
 					</p>
 					<p style="font-size:80%;">I am a saxophone player, computer enthusiast, and web designer. I am also the president of the NJIT Society of Musical Arts (SOMA), and the band leader for the SOMA jazz band.
 					</p>
-				<!--
 					<br>
-					<img style="display:block;margin-left:auto;margin-right:auto;" src="http://web.njit.edu/~msl23/images/Disney2.jpg" class="img-rounded img-responsive">
-					<div style="text-align:center;"><i><h5>Disney World, May 2012</h5></i></div>
-				-->
-	
+					
+					<div class="row">
+						<div class="col-sm-6 col-md-6">
+							<div class="row">
+								<div class="col-sm-6 col-md-6">
+									<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+										<div class="flipper">
+											<div class="front">
+												<div class="thumbnail">
+													<div class="caption">
+														<h3>Web Design</h3>
+														<small>I am a front and back end web developer and am skilled in many modern web languages and interactive frameworks.</small>
+														<p class="card-directions"><a class="btn btn-primary" role="button">More...</a></p>
+													</div>
+												</div>
+											</div>
+											<div class="back">
+												<div class="thumbnail">
+													<div class="caption">
+														<h3>Languages and Frameworks:</h3>
+														<small>
+															<ul style="list-style-type: none;padding:0 0 0 0px;">
+																<li>HTML5 / CSS3</li>
+																<li>ColdFusion</li>
+																<li>PHP</li>
+																<li>jQuery</li>
+																<li>Bootstrap</li>
+																<li>Node.js</li>
+																<li>Joomla</li>
+																<li>Wordpress</li>
+															</ul>
+														</small>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-6">
+									<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+										<div class="flipper">
+											<div class="front">
+												<div class="thumbnail">
+													<div class="caption">
+														<h3>Administration</h3>
+														<small>I have experience in windows and unix system administration including Active Directory and Group Policy.</small>
+														<p class="card-directions"><a class="btn btn-primary" role="button">More...</a></p>
+													</div>
+												</div>
+											</div>
+											<div class="back">
+												<div class="thumbnail">
+													<div class="caption">
+														<h3>Systems:</h3>
+														<small>
+															<ul style="list-style-type: none;padding:0 0 0 0px;">
+																<li>Unix User Management</li>
+																<li>Active Directory</li>
+																<li>Windows Group Policy</li>
+																<li>Windows Domains</li>
+															</ul>
+														</small>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-6">
+							<div class="row">
+								<div class="col-sm-6 col-md-6">
+									<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+										<div class="flipper">
+											<div class="front">
+												<div class="thumbnail">
+													<div class="caption">
+														<h3>Networking</h3>
+														<small>I have experience and formal education in network infrastructure, DNS, TCP/IP, routing, as well as hardware upgrades and maintenance.</small>
+														<p class="card-directions"><a class="btn btn-primary" role="button">More...</a></p>
+													</div>
+												</div>
+											</div>
+											<div class="back">
+												<div class="thumbnail">
+													<div class="caption">
+														<h3>Experience:</h3>
+														<small>
+															<ul style="list-style-type: none;padding:0 0 0 0px;">
+																<li>Current IT Major at NJIT</li>
+																<br>
+																<li>2 years in the Kittatinny Regional High School IT Department</li>
+																<br>
+																<li>2 years at AdvancedGroup, maintining servers and networks</li>
+															</ul>
+														</small>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-6">
+									<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+										<div class="flipper">
+											<div class="front">
+												<div class="thumbnail">
+													<div class="caption">
+														<h3>Data Management</h3>
+														<small>I have experience designing and maintaining MySQL databases including data security and encryption methods.</small>
+														<p class="card-directions"><a class="btn btn-primary" role="button">More...</a></p>
+													</div>
+												</div>
+											</div>
+											<div class="back">
+												<div class="thumbnail">
+													<div class="caption">
+														<h3>Skills:</h3>
+														<small>
+															<ul style="list-style-type: none;padding:0 0 0 0px;">
+																<li>Data Visualization</li>
+																<li>Data Security</li>
+																<li>Database Design</li>
+																<br>
+																<li>Using:</li>
+																<li>Microsoft SQL</li>
+																<li>MySQL</li>
+																<li>PostgreSQL</li>
+																<li>phpMyAdmin</li>
+															</ul>
+														</small>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			
 				<div class="tab-pane fade" id="contact">

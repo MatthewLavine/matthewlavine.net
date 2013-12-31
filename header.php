@@ -15,6 +15,7 @@
 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/cards.css">
 		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
 		<link href="css/united.css" rel="stylesheet">	
