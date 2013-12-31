@@ -24,24 +24,32 @@
             		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         	<![endif]-->
 		
-		<p class="text-primary">Notice: This website is under active construction!</p>
-		<div class="progress progress-striped active">
-			<div class="progress-bar"  role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo rand(50,90); ?>%">
-				<span class="sr-only">Website Progress: 80% Complete</span>
-			</div>
-		</div>
-
 		<div class="jumbotron">
 			<div class="tab-content">
 				<div class="tab-pane fade in active" id="aboutMe">
+  					<h2 class="text-center" style="margin-top:0px;">Hi, My name is Matthew Lavine</h2>
+  					<h2><small>Who am I?</small></h2>					
+					<div class="row">
+						<div class="col-lg-6">
+  							<div class="panel panel-default">
+  								<div class="panel-heading">Education / Work</div>
+  								<div class="panel-body">
+    								<p style="font-size:80%;">I am a sophomore Information Technology Major at the <a target="_blank" href="http://www.njit.edu/">New Jersey Institute of Technology</a>. I am currently employed at AdvancedGroup.net doing web design and server maintenance.
+									</p>
+  								</div>
+							</div>					
+						</div>
 
-  					<h2>Hi, My Name is Matthew Lavine</h2>
-  					<h2><small>Who am I?</small></h2>
-
-					<p style="font-size:80%;">I am a sophomore Information Technology Major at the <a target="_blank" href="http://www.njit.edu/">New Jersey Institute of Technology</a>. I am currently employed at AdvancedGroup.net doing web design and server maintenance. At work I code mainly in ColdFusion my my personal work extends into many other areas.
-					</p>
-					<p style="font-size:80%;">I am a saxophone player, computer enthusiast, and web designer. I am also the president of the NJIT Society of Musical Arts (SOMA), and the band leader for the SOMA jazz band.
-					</p>
+						<div class="col-lg-6">
+  							<div class="panel panel-default">
+  								<div class="panel-heading">Play</div>
+  								<div class="panel-body">
+    								<p style="font-size:80%;">I am a saxophone player, computer enthusiast, and web designer. I am also the president of the NJIT Society of Musical Arts (SOMA), and the band leader for the SOMA jazz band.
+									</p>
+  								</div>
+							</div>
+						</div>
+					</div>
 
   					<h2><small>What do I do?</small></h2>					
 					<div class="row">
@@ -191,7 +199,7 @@
 				<script src="js/validateContact.js"></script>
                                 <form method="POST" action="submitContact.php" id="contactForm" name="contactForm" role="form">
                                         <fieldset>
-                                                <legend>Contact Me</legend>
+                                                <legend><h3>Contact Me</h3></legend>
 						<span class="help-block">You can contact me at <a href="mailto:msl23@njit.edu">msl23@njit.edu</a> or use the form below.</span>
                                                 <div class="form-group">
                                                         <label for="name">Name</label>
