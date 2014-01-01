@@ -66,7 +66,7 @@
 													<div class="caption">
 														<i class="fa fa-code fa-2x"></i>
 														<h3 class="smallTopMargin">Web Design</h3>
-														<small>I am employed as a front and back end web developer and am skilled in many modern web languages and interactive frameworks.</small>
+														<smallz>I am employed as a front and back end web developer and am skilled in many modern web languages and interactive frameworks.</small>
 														<p class="card-directions"><a class="btn btn-primary" role="button">More...</a></p>
 													</div>
 												</div>
@@ -101,7 +101,7 @@
 													<div class="caption">
 														<i class="fa fa-users fa-2x"></i>
 														<h3 class="smallTopMargin">Administration</h3>
-														<small>I have experience in Windows and Unix system administration including Active Directory and Group Policy.</small>
+														<smallz>I have experience in Windows and Unix system administration including Active Directory and Group Policy.</small>
 														<p class="card-directions"><a class="btn btn-primary" role="button">More...</a></p>
 													</div>
 												</div>
@@ -140,7 +140,7 @@
 													<div class="caption">
 														<i class="fa fa-code-fork fa-2x"></i>
 														<h3 class="smallTopMargin">Networking</h3>
-														<small>I have experience and formal education in network infrastructure, DNS, TCP/IP, routing, as well as hardware upgrades and maintenance.</small>
+														<smallz>I have experience and formal education in network infrastructure, DNS, TCP/IP, routing, as well as hardware upgrades and maintenance.</small>
 														<p class="card-directions"><a class="btn btn-primary" role="button">More...</a></p>
 													</div>
 												</div>
@@ -172,7 +172,7 @@
 													<div class="caption">
 														<i class="fa fa-bar-chart-o fa-2x"></i>
 														<h3 class="smallTopMargin">Data</h3>
-														<small>I have experience designing and maintaining MySQL databases including data security and encryption methods.</small>
+														<smallz>I have experience designing and maintaining MySQL databases including data security and encryption methods.</small>
 														<p class="card-directions"><a class="btn btn-primary" role="button">More...</a></p>
 													</div>
 												</div>
