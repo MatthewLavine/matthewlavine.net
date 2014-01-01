@@ -5,10 +5,27 @@
 	        </div>
         </div>
 
-	    <script async src="js/vendor/jquery-1.10.2.min.js"></script>
         <script async src="js/plugins.js"></script>
         <script async src="js/main.js"></script>
         <script async src="js/bootstrap.min.js"></script>
+        <script src="js/typed.js"></script>
+        <script>
+            $(function(){
+                 $("#sayHello").text('');
+                 $("#sayHello").typed({
+                    strings: ["Welcome to my site!", "$name =  \"Matthew Lavine\"; echo \"Hi, my name is $name\";"],
+                    typeSpeed: 50,
+                    backDelay: 1000,
+                    callback: function(){
+                        setTimeout(function() {
+                            $("#typed-cursor").removeAttr('id').fadeTo("slow", 0);
+                            return;
+                        }, 1000);
+                    }
+                });
+            });
+        </script>
+
 	<!--
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

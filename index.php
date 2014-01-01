@@ -30,7 +30,7 @@
 		<div class="jumbotron">
 			<div class="tab-content">
 				<div class="tab-pane fade in active" id="aboutMe">
-  					<h2 class="text-center" style="margin-top:0px;">Hi, My name is Matthew Lavine</h2>
+  					<h2 class="text-center" style="margin-top:0px;"><span id="sayHello">Hi, my name is Matthew Lavine</span></h2>
   					<h2><small>Who I am</small></h2>					
 					<div class="row">
 						<div class="col-lg-6">

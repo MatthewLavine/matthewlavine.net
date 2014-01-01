@@ -18,6 +18,7 @@
 		<link rel="stylesheet" href="css/cards.css">
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 		<script async src="js/vendor/modernizr-2.6.2.min.js"></script>
+	    <script src="js/vendor/jquery-1.10.2.min.js"></script>
 
 		<link href="css/united.min.css" rel="stylesheet">	
     		
