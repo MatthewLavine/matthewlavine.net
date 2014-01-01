@@ -27,6 +27,9 @@
 				<li role="presentation" class="dropdown-header">Personal Projects</li>
           			<li><a href="http://web.njit.edu/~msl23/chris/">chris.harrsch.net</a></li>
           			<li><a href="http://web.njit.edu/~msl23/bootstrap/bootstrap.zip">Bootstrap Deploy Package</a></li>
+                <li><a href="http://krhs.net/" target="_blank">Kittatinny Regional High School</a></li>
+
+
 			</ul>
 		</li>
       		<li><a data-toggle="tab" href="#contact">Contact Me</a></li>		
