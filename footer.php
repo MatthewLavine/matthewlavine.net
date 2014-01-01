@@ -1,7 +1,7 @@
         <div id="footer">
                 <div class="container">
                   	<p class="text-muted credit">Designed by Matthew Lavine using <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a>, <a target="_blank" href="http://jquery.com/">jQuery</a>, and <a target="_blank" href="http://html5boilerplate.com/">HTML5 Boilerplate</a>. &copy;<?php $copyYear = 2012; $curYear = date('Y');echo $copyYear . (($copyYear != $curYear) ? '-' . $curYear : ''); ?>
-			<a href="#" class="pull-right" data-toggle="modal" data-target="#signin">Sign In</a></p>
+			<a href="#" class="pull-right" data-toggle="modal" data-target="#signin">Sign In <i class="fa fa-cog"></i></a></p>
 	        </div>
         </div>
 
