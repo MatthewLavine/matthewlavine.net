@@ -35,9 +35,9 @@
     	<ul class="nav navbar-nav navbar-right">
           	<!--<li><a href="#">Facebook</a></li>-->
         	<!--<li><a href="#">Twitter</a></li>-->
-		<li><a target="_blank" href="http://advancedgroup.net/">AdvancedGroup</a></li>        	
-		<li><a target="_blank" href="https://www.linkedin.com/in/lavine">LinkedIn</a></li>
-         	<li><a target="_blank" href="https://github.com/MatthewLavine/matthewlavine.net">GitHub</a></li>
+		      <!--<li><a target="_blank" href="http://advancedgroup.net/">AdvancedGroup</a></li>-->
+		      <li><a target="_blank" href="https://www.linkedin.com/in/lavine"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+         	<li><a target="_blank" href="https://github.com/MatthewLavine/matthewlavine.net"><i class="fa fa-github"></i> GitHub</a></li>
 	 </ul>
 </div><!-- /.navbar-collapse -->
 
