@@ -13,16 +13,19 @@
 			echo '</div>';
 		}
 
-             	if(isset($_GET['contactSuccess'])){
-                        echo '<div style="width:475px;margin-left:auto;margin-right:auto;" class="alert alert-success">';
-                        echo '<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>';
-                        echo 'Thank-You! Your messaage has been sent.';
-                        echo '</div>';
+        if(isset($_GET['contactSuccess'])){
+            echo '<div style="width:475px;margin-left:auto;margin-right:auto;" class="alert alert-success">';
+            echo '<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>';
+            echo 'Thank-You! Your messaage has been sent.';
+            echo '</div>';
 		}?>
 
-		<!--[if lt IE 7]>
-            		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        	<![endif]-->
+		<!--[if IE]>
+            <div class="alert alert-success">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            You are using an <strong>outdated</strong> browser. Please <a target="_blank" href="http://browsehappy.com/">upgrade your browser</a> to view this site as intended.
+            </div>
+    	<![endif]-->
 		
 		<div class="jumbotron">
 			<div class="tab-content">
