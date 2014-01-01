@@ -13,7 +13,7 @@
             $(function(){
                  $("#sayHello").text('');
                  $("#sayHello").typed({
-                    strings: ["","Hi", "Welcome to my site!", "My name is Matthew Lavine"],
+                    strings: ["","Hi.", "Welcome to my site!", "If you have any questions, feel free to use the contact form above.", "My name is Matthew Lavine."],
                     typeSpeed: 50,
                     backDelay: 1500,
                     callback: function(){
