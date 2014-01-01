@@ -99,7 +99,7 @@
 											<div class="front">
 												<div class="thumbnail">
 													<div class="caption">
-														<i class="fa fa-user fa-2x"></i>
+														<i class="fa fa-users fa-2x"></i>
 														<h3 class="smallTopMargin">Administration</h3>
 														<small>I have experience in Windows and Unix system administration including Active Directory and Group Policy.</small>
 														<p class="card-directions"><a class="btn btn-primary" role="button">More...</a></p>
