@@ -13,8 +13,8 @@
             $(function(){
                  $("#sayHello").text('');
                  $("#sayHello").typed({
-                    strings: ["Hi", "Welcome to my site!", "My name is Matthew Lavine"],
-                    typeSpeed: 40,
+                    strings: ["","Hi", "Welcome to my site!", "My name is Matthew Lavine"],
+                    typeSpeed: 50,
                     backDelay: 1500,
                     callback: function(){
                         setTimeout(function() {
