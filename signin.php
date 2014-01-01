@@ -12,7 +12,7 @@
 					<fieldset>
 						<div class="form-group">
 							<label for="name">Email</label>
-							<input type="text" class="form-control" name="email" id="email" placeholder="Enter email">
+							<input type="text" class="form-control" name="username" id="username" placeholder="Enter email">
 						</div>
 
 						<div class="form-group">
