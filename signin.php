@@ -11,8 +11,8 @@
 				<form method="POST" action="login.php" id="signinForm" name="signinForm" role="form">
 					<fieldset>
 						<div class="form-group">
-							<label for="name">Username</label>
-							<input type="text" class="form-control" name="username" id="username" placeholder="Enter username">
+							<label for="name">Email</label>
+							<input type="text" class="form-control" name="email" id="email" placeholder="Enter email">
 						</div>
 
 						<div class="form-group">
@@ -25,7 +25,7 @@
 
 			<div class="modal-footer">
 			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        			<button type="button" class="btn btn-warning">Reset</button>
+        			<button type="button" class="btn btn-warning" onclick="document.forms['signinForm'].reset();">Reset</button>
         			<button type="button" class="btn btn-primary">Sign In</button>
 			</div>
 		</div><!-- /.modal-content -->
