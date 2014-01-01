@@ -202,10 +202,9 @@
 								</div>
 							</div>
 						</div>
-					</div>
-
+					</div>					
 				</div>
-			
+
 				<div class="tab-pane fade" id="contact">
 				<script src="js/validateContact.js"></script>
                                 <form method="POST" action="submitContact.php" id="contactForm" name="contactForm" role="form">
