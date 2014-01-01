@@ -5,11 +5,10 @@
 	        </div>
         </div>
 
-	    <script src="js/vendor/jquery-1.10.2.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        <script src="https://code.jquery.com/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+	    <script async src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script async src="js/plugins.js"></script>
+        <script async src="js/main.js"></script>
+        <script async src="js/bootstrap.min.js"></script>
 	<!--
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
