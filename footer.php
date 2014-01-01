@@ -13,9 +13,9 @@
             $(function(){
                  $("#sayHello").text('');
                  $("#sayHello").typed({
-                    strings: ["Welcome to my site!", "$name =  \"Matthew Lavine\"; echo \"Hi, my name is $name\";"],
-                    typeSpeed: 50,
-                    backDelay: 1000,
+                    strings: ["Hi", "Welcome to my site!", "My name is Matthew Lavine"],
+                    typeSpeed: 40,
+                    backDelay: 1500,
                     callback: function(){
                         setTimeout(function() {
                             $("#typed-cursor").removeAttr('id').fadeTo("slow", 0);
