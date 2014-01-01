@@ -35,7 +35,7 @@
 					<div class="row">
 						<div class="col-lg-6">
   							<div class="panel panel-default">
-  								<div class="panel-heading">Professional</div>
+  								<div class="panel-heading">Professional<i class="fa fa-suitcase pull-right smallTopMargin"></i></div>
   								<div class="panel-body">
     								<p style="font-size:80%;">I am a sophomore Information Technology Major at the <a target="_blank" href="http://www.njit.edu/">New Jersey Institute of Technology</a>. I am currently employed at <a target="_blank" href="http://advancedgroup.net/">AdvancedGroup.net</a> doing web design and server maintenance.
 									</p>
@@ -45,7 +45,7 @@
 
 						<div class="col-lg-6">
   							<div class="panel panel-default">
-  								<div class="panel-heading">Personal</div>
+  								<div class="panel-heading">Personal<i class="fa fa-user pull-right smallTopMargin"></i></div>
   								<div class="panel-body">
     								<p style="font-size:80%;">I am a saxophone player, computer enthusiast, and web designer. I am also the president of the NJIT Society of Musical Arts (SOMA), and the band leader for the SOMA jazz band.
 									</p>
