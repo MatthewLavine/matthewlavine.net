@@ -73,18 +73,18 @@ function validateContact() {
     		email: $("#email").val(),
     		message: $("#message").val()
 		};
+
 		$.ajax({
     		type: "POST",
     		url: 'submitContact.php',
     		data: data,
     		success: function(){
-    			jAlert('Email sent!', 'Thank you for your email, I will review it shortly.');
-        		//$('.success').fadeIn(1000);
+    			alert('Email sent!, Thank you for your email, I will review it shortly.');
     		}
 		});
 
-		//document.forms["contactForm"].submit();	
 		return true;
+
 	} else {
 		return false;
 	}
