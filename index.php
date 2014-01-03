@@ -208,7 +208,7 @@
 
 				<div class="tab-pane fade" id="contact">
 				<script src="js/validateContact.js"></script>
-                                <form method="POST" action="submitContact.php" id="contactForm" name="contactForm" role="form">
+                                <form id="contactForm" name="contactForm" role="form">
                                         <fieldset>
                                                 <legend><h3>Contact Me</h3></legend>
 						<span class="help-block">You can contact me at <a href="mailto:msl23@njit.edu">msl23@njit.edu</a> or use the form below.</span>
@@ -226,7 +226,7 @@
 							<label for="message">Message / Request:</label>
                                                         <textarea rows="4" cols="3" name="message" class="form-control" id="message" placeholder="Enter a message or work request"></textarea>
                                                 </div>
-						<button type="button" onClick="resetContact()" class="btn btn-default">Reset</button>
+						<button type="button" onClick="resetContact()" class="btn btn-default" data-loading-text="Loading...">Reset</button>
 						<button type="button" onClick="validateContact()" class="btn btn-primary">Submit</button>
 					</fieldset>
 				</form>

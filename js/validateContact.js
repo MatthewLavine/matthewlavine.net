@@ -68,7 +68,22 @@ function validateContact() {
 	}		
 
 	if(error == false) {
-		document.forms["contactForm"].submit();	
+		var data = {
+    		name: $("#name").val(),
+    		email: $("#email").val(),
+    		message: $("#message").val()
+		};
+		$.ajax({
+    		type: "POST",
+    		url: 'submitContact.php',
+    		data: data,
+    		success: function(){
+    			jAlert('Email sent!', 'Thank you for your email, I will review it shortly.');
+        		//$('.success').fadeIn(1000);
+    		}
+		});
+
+		//document.forms["contactForm"].submit();	
 		return true;
 	} else {
 		return false;
