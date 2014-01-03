@@ -1,1 +1,7 @@
 ErrorDocument 404 /~msl23/index.php?notfound=true
+
+<ifModule mod_deflate.c>
+  <filesMatch "\.(css|js|x?html?|php)$">
+    SetOutputFilter DEFLATE
+  </filesMatch>
+</ifModule>
