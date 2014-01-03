@@ -68,6 +68,9 @@ function validateContact() {
 	}		
 
 	if(error == false) {
+
+		$("#submitButton").button('loading');
+
 		var data = {
     		name: $("#name").val(),
     		email: $("#email").val(),
@@ -79,7 +82,16 @@ function validateContact() {
     		url: 'submitContact.php',
     		data: data,
     		success: function(){
-    			alert('Email sent!, Thank you for your email, I will review it shortly.');
+    			$("#submitButton").button('complete');
+				$("#submitButton").removeClass("btn-primary");
+				$("#submitButton").addClass("btn-success");
+
+				setTimeout(function() {
+    				$("#submitButton").button('reset');
+					$("#submitButton").removeClass("btn-success");
+					$("#submitButton").addClass("btn-primary");
+					resetContact();
+				}, 2000);
     		}
 		});
 

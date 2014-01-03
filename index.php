@@ -208,28 +208,30 @@
 
 				<div class="tab-pane fade" id="contact">
 				<script src="js/validateContact.js"></script>
-                                <form id="contactForm" name="contactForm" role="form">
-                                        <fieldset>
-                                                <legend><h3>Contact Me</h3></legend>
-						<span class="help-block">You can contact me at <a href="mailto:msl23@njit.edu">msl23@njit.edu</a> or use the form below.</span>
-                                                <div class="form-group">
-                                                        <label for="name">Name</label>
-                                                        <input type="text" class="form-control" name="name" id="name" placeholder="Enter name">
-                                                </div>
+                    <form id="contactForm" name="contactForm" role="form">
+                    	<fieldset>
+                            <legend><h3>Contact Me</h3></legend>
+							<span class="help-block">You can contact me at <a href="mailto:msl23@njit.edu">msl23@njit.edu</a> or use the form below.</span>
 
-                                                <div class="form-group">
-                                                        <label for="email">Email address</label>
-                                                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                                                </div>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Enter name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                            </div>
 	
-                                                <div class="form-group">
-							<label for="message">Message / Request:</label>
-                                                        <textarea rows="4" cols="3" name="message" class="form-control" id="message" placeholder="Enter a message or work request"></textarea>
-                                                </div>
-						<button type="button" onClick="resetContact()" class="btn btn-default" data-loading-text="Loading...">Reset</button>
-						<button type="button" onClick="validateContact()" class="btn btn-primary">Submit</button>
-					</fieldset>
-				</form>
+                            <div class="form-group">
+								<label for="message">Message / Request:</label>
+                                 <textarea rows="4" cols="3" name="message" class="form-control" id="message" placeholder="Enter a message or work request"></textarea>
+                            </div>
+
+							<button type="button" id="resetButton" onClick="resetContact()" class="btn btn-default">Reset</button>
+							<button type="button" id="submitButton" onClick="validateContact()" class="btn btn-primary" data-loading-text="Sending..." data-complete-text="Sent!">Submit</button>	
+						</fieldset>
+					</form>
 				</div>
 			</div>
 		</div>
