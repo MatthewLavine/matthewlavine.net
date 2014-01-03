@@ -27,7 +27,7 @@ function validateContact() {
 	} else {
 		badName = false;
 		$("#name").removeClass("focusMe");
-		$("#name").parent().removeClass("form-group has-error");
+		$("#name").parent().removeClass("has-error");
 		$("#name").parent().find(".label-danger").remove();
 	}		
 		
@@ -47,7 +47,7 @@ function validateContact() {
 	} else {
 		badEmail = false;
 		$("#name").removeClass("focusMe");
-		$( "#email").parent().removeClass("form-group has-error");
+		$("#email").parent().removeClass("has-error");
 		$("#email").parent().find(".label-danger").remove();
 	}		
 
@@ -63,7 +63,7 @@ function validateContact() {
 	} else {
 		badMessage = false;
 		$("#message").removeClass("focusMe");
-		$("#message").parent().removeClass("form-group has-error");
+		$("#message").parent().removeClass("has-error");
 		$("#message").parent().find(".label-danger").remove();
 	}		
 
