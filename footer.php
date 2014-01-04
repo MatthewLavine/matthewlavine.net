@@ -10,6 +10,10 @@
         <script async src="js/bootstrap.min.js"></script>
         <script src="js/typed.js"></script>
         <script>
+            $(function() {
+                $("body").hide().fadeIn('slow');
+            });
+
             $(function(){
                  $("#sayHello").text('');
                  $("#sayHello").typed({

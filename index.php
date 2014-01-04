@@ -2,7 +2,7 @@
 <?php include 'header.php' ?>
 </head>
 
-<body>
+<body>	
 	<?php include 'nav.php' ?>
 
 	<div class="container" id="wrapper">
