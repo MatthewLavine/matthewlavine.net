@@ -6,6 +6,7 @@ var successMessage = false;
 function resetContact() {
 	document.forms["contactForm"].reset();
 	$("*").removeClass("has-error");
+	$("*").removeClass("has-success");
 	$(".label-danger").remove();
 
 	badName = false;
@@ -32,6 +33,7 @@ function validateContact() {
 		badName = false;
 		$("#name").removeClass("focusMe");
 		$("#name").parent().removeClass("has-error");
+		$("#name").parent().addClass("has-success");
 		$("#name").parent().find(".label-danger").remove();
 	}		
 		
@@ -52,6 +54,7 @@ function validateContact() {
 		badEmail = false;
 		$("#name").removeClass("focusMe");
 		$("#email").parent().removeClass("has-error");
+		$("#email").parent().addClass("has-success");
 		$("#email").parent().find(".label-danger").remove();
 	}		
 
@@ -68,6 +71,7 @@ function validateContact() {
 		badMessage = false;
 		$("#message").removeClass("focusMe");
 		$("#message").parent().removeClass("has-error");
+		$("#message").parent().addClass("has-success");
 		$("#message").parent().find(".label-danger").remove();
 	}		
 
