@@ -5,7 +5,7 @@
 <body>
 	<?php include 'nav.php' ?>
 
-	<div class="container">
+	<div class="container" id="wrapper">
 		<?php
 		if(isset($_GET['notfound'])){
 			echo '<div style="width:300px;margin-left:auto;margin-right:auto;" class="alert alert-danger">';
