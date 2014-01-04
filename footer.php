@@ -18,7 +18,7 @@
                     backDelay: 1500,
                     callback: function(){
                         setTimeout(function() {
-                            $("#typed-cursor").removeAttr('id').fadeTo("slow", 0);
+                            $("#typed-cursor").css("color", "green").removeAttr('id').fadeTo("slow", 0);
                             return;
                         }, 1000);
                     }
