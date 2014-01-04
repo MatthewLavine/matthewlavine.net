@@ -122,7 +122,7 @@ function validateContact() {
 					$("#submitButton").removeClass("btn-success");
 					$("#submitButton").addClass("btn-primary");
 					resetContact();
-				}, 2000);
+				}, 4000);
     		}
 		});
 
