@@ -6,20 +6,13 @@
 	<?php include 'nav.php' ?>
 
 	<div class="container" id="wrapper">
-		<?php
+		<?php /*
 		if(isset($_GET['notfound'])){
 			echo '<div style="width:300px;margin-left:auto;margin-right:auto;" class="alert alert-danger">';
 			echo '<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>';
 			echo 'ERROR 404: That page was not found!';
 			echo '</div>';
-		}
-
-        if(isset($_GET['contactSuccess'])){
-            echo '<div style="width:475px;margin-left:auto;margin-right:auto;" class="alert alert-success">';
-            echo '<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>';
-            echo 'Thank-You! Your messaage has been sent.';
-            echo '</div>';
-		}?>
+		} */ ?>
 
 		<!--[if IE]>
             <div class="alert alert-success">

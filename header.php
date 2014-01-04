@@ -15,6 +15,8 @@
 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/alertify.core.css">
+		<link rel="stylesheet" href="css/alertify.default.css">
 		<link rel="stylesheet" href="css/cards.css">
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 		<script async src="js/vendor/modernizr-2.6.2.min.js"></script>

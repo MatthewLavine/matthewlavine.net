@@ -7,10 +7,12 @@
 
         <script async src="js/plugins.js"></script>
         <script async src="js/main.js"></script>
+        <script src="js/alertify.min.js"></script>
         <script async src="js/bootstrap.min.js"></script>
         <script src="js/typed.js"></script>
         <script>
             $(function(){
+                 <?php if(isset($_GET['notfound'])){echo 'alertify.error("Error 404: That page was not found!");';}?>
                  $("#sayHello").text('');
                  $("#sayHello").typed({
                     strings: ["","Hi.", "Welcome to my site!", "My name is Matthew Lavine."],
