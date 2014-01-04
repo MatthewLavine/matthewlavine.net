@@ -104,6 +104,11 @@ smallz{
     margin-top: 10px;
 }
 
+.jumbotron {
+    margin-bottom: 15px !important;
+}
+
+
 /* For Typed.js Cursor */
 
         #sayHello {
