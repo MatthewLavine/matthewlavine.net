@@ -229,7 +229,8 @@
                             </div>
 
 							<button type="button" id="resetButton" onClick="resetContact()" class="btn btn-default">Reset</button>
-							<button type="button" id="submitButton" onClick="validateContact()" class="btn btn-primary" data-loading-text="Sending..." data-complete-text="Sent!">Submit</button>	
+							<button type="button" id="submitButton" onClick="validateContact()" class="btn btn-primary" data-loading-text="Sending..." data-complete-text="Sent!">Submit</button>
+							<div id="formStatus" class="pull-right"></div>
 						</fieldset>
 					</form>
 				</div>

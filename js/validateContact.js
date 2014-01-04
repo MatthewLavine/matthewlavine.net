@@ -1,6 +1,7 @@
 var badName = false;
 var badEmail = false;
 var badMessage = false;
+var successMessage = false;
 
 function resetContact() {
 	document.forms["contactForm"].reset();
@@ -13,10 +14,13 @@ function resetContact() {
 }
 
 function validateContact() {
+	if(successMessage){
+		return false;
+	}
 	var error = false;
 
 	//Name Check
-	if(document.forms["contactForm"]["name"].value == "") {
+	if(document.forms["contactForm"]["name"].value.trim() == "") {
 		if(badName == false){
 			$("#name").addClass("focusMe");
 			$("#name").parent().addClass("has-error");
@@ -52,7 +56,7 @@ function validateContact() {
 	}		
 
 	//Message Check
-	if(document.forms["contactForm"]["message"].value == "") {
+	if(document.forms["contactForm"]["message"].value.trim() == "") {
 		if(badMessage == false){
 			$("#message").addClass("focusMe");
 			$("#message").parent().addClass("has-error");
@@ -71,6 +75,13 @@ function validateContact() {
 
 		$("#submitButton").button('loading');
 
+		successMessage = true;
+
+    	$("#formStatus").fadeOut(0);
+		$("#formStatus").css("color","green");
+		$("#formStatus").append("Email Sending...");
+    	$("#formStatus").fadeIn();
+
 		var data = {
     		name: $("#name").val(),
     		email: $("#email").val(),
@@ -82,11 +93,27 @@ function validateContact() {
     		url: 'submitContact.php',
     		data: data,
     		success: function(){
+    			$("#formStatus").fadeOut(100);
+
+    			setTimeout(function() {
+    				$("#formStatus").empty();
+					$("#formStatus").append("Email Sent!");
+    				$("#formStatus").fadeIn(100);
+    			}, 100);
+
     			$("#submitButton").button('complete');
 				$("#submitButton").removeClass("btn-primary");
 				$("#submitButton").addClass("btn-success");
 
 				setTimeout(function() {
+    				$("#formStatus").fadeOut(100);
+
+					setTimeout(function() {
+    					$("#formStatus").empty();
+						$("#formStatus").css("color", "");
+						successMessage = false;
+					}, 200);
+
     				$("#submitButton").button('reset');
 					$("#submitButton").removeClass("btn-success");
 					$("#submitButton").addClass("btn-primary");
