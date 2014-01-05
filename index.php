@@ -180,11 +180,11 @@
 																<li>Data Visualization</li>
 																<li>Data Security</li>
 																<li>Database Design</li>
-																<br>
-																<li>Using:</li>
+																<li><i>Using:</i></li>
 																<li>Microsoft SQL</li>
 																<li>MySQL</li>
 																<li>PostgreSQL</li>
+																<li>MongoDB</li>
 																<li>phpMyAdmin</li>
 															</ul>
 														</small>
