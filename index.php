@@ -149,7 +149,7 @@
 																<br>
 																<li>2 years in the Kittatinny Regional High School IT Department</li>
 																<br>
-																<li>2 years at AdvancedGroup, maintining servers and networks</li>
+																<li>2 years at AdvancedGroup, maintaining servers and networks</li>
 															</ul>
 														</small>
 													</div>
