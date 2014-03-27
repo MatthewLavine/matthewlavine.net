@@ -41,7 +41,7 @@
   							<div class="panel panel-default">
   								<div class="panel-heading"><p class="text-center smallTopMargin">Personal</p></div>
   								<div class="panel-body">
-    								<p style="font-size:80%;">I am a saxophone player, computer enthusiast, and web designer. I am also the president of the NJIT Society of Musical Arts (SOMA), and the band leader for the SOMA jazz band.
+    								<p style="font-size:80%;">I am a saxophone player, computer enthusiast, and web developer. I am also the president of the NJIT Society of Musical Arts (SOMA), and the band leader for the SOMA jazz band.
 									</p>
   								</div>
 							</div>
