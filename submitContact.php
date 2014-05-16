@@ -10,7 +10,7 @@ if($_POST){
 
 	$headers  = 'MIME-Version: 1.0' . "\r\n";
 	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-	$headers .= 'From: Portfolio Website <skynet@matthewlavine.net>' . "\r\n";
+	$headers .= 'From: matthewlavine.net <skynet@matthewlavine.net>' . "\r\n";
 
 	mail('msl23@njit.edu', $subject, $body, $headers);
 }
