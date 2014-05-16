@@ -1,7 +1,49 @@
-ErrorDocument 404 /~msl23/index.php?notfound=true
+ErrorDocument 404 /index.php?notfound=true
 
 <ifModule mod_deflate.c>
-  <filesMatch "\.(css|js|x?html?|php)$">
-    SetOutputFilter DEFLATE
-  </filesMatch>
+  	<filesMatch "\.(css|js|x?html?|php)$">
+	    SetOutputFilter DEFLATE
+  	</filesMatch>
+</ifModule>
+
+<ifModule mod_expires.c>
+	ExpiresActive On
+	ExpiresDefault A300
+	 
+	# Expires after 1 month
+	ExpiresByType image/gif A2592000
+	ExpiresByType image/png A2592000
+	ExpiresByType image/jpg A2592000
+	ExpiresByType image/x-icon A2592000
+	ExpiresByType application/pdf A2592000
+	ExpiresByType application/x-javascript A2592000
+	ExpiresByType text/plain A2592000
+	 
+	# Expires after 1 day
+	ExpiresByType text/css A86400
+</ifModule>
+
+<ifModule mod_headers.c>
+	# Turn on Expires and set default expires to 3 days
+	ExpiresActive On
+	ExpiresDefault A259200
+	 
+	# Set up caching on media files for 1 month
+	<filesMatch ".(ico|gif|jpg|jpeg|png|flv|pdf|swf|mov|mp3|wmv|ppt)$">
+		ExpiresDefault A2419200
+		Header append Cache-Control "public"
+	</filesMatch>
+	 
+	# Set up 2 Hour caching on commonly updated files
+	<filesMatch ".(xml|txt|html|js|css)$">
+		ExpiresDefault A7200
+		Header append Cache-Control "private, must-revalidate"
+	</filesMatch>
+	 
+	# Force no caching for dynamic files
+	<filesMatch ".(php|cgi|pl|htm)$">
+		ExpiresDefault A0
+		Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+		Header set Pragma "no-cache"
+	</filesMatch>
 </ifModule>
