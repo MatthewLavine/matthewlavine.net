@@ -31,7 +31,7 @@
   							<div class="panel panel-default">
   								<div class="panel-heading"><p class="text-center smallTopMargin">Professional</p></div>
   								<div class="panel-body">
-    								<p style="font-size:80%;">I am a sophomore Information Technology Major at the <a target="_blank" href="http://www.njit.edu/">New Jersey Institute of Technology</a>. I am currently employed at <a target="_blank" href="http://advancedgroup.net/">AdvancedGroup.net</a> doing web design and server maintenance.
+    								<p style="font-size:80%;">I am a Junior Information Technology Major at the <a target="_blank" href="http://www.njit.edu/">New Jersey Institute of Technology</a>. I am currently employed at <a target="_blank" href="http://advancedgroup.net/">AdvancedGroup.net</a> doing web design and server maintenance.
 									</p>
   								</div>
 							</div>					
