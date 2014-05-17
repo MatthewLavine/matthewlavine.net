@@ -31,7 +31,7 @@
   							<div class="panel panel-default">
   								<div class="panel-heading"><p class="text-center smallTopMargin">Professional</p></div>
   								<div class="panel-body">
-    								<p style="font-size:80%;">I am a Junior Information Technology Major at the <a target="_blank" href="http://www.njit.edu/">New Jersey Institute of Technology</a>. I am currently employed at <a target="_blank" href="http://advancedgroup.net/">AdvancedGroup.net</a> doing web design and server maintenance.
+    								<p style="font-size:80%;">I am a Junior Information Technology Major at the <a target="_blank" href="http://www.njit.edu/">New Jersey Institute of Technology</a>. I am currently employed at <a target="_blank" href="http://advancedgroup.net/">AdvancedGroup.net</a> for web development and server maintenance.
 									</p>
   								</div>
 							</div>					
@@ -41,7 +41,7 @@
   							<div class="panel panel-default">
   								<div class="panel-heading"><p class="text-center smallTopMargin">Personal</p></div>
   								<div class="panel-body">
-    								<p style="font-size:80%;">I am a saxophone player, computer enthusiast, and web developer. I am also the president of the NJIT Society of Musical Arts (SOMA), and the band leader for the SOMA jazz band.
+    								<p style="font-size:80%;">I am a jazz musician on alto saxophone, computer enthusiast, and aspiring pilot. I am also the president of the NJIT Society of Musical Arts (SOMA), and the band leader for the NJIT Jazz Band.
 									</p>
   								</div>
 							</div>
@@ -68,18 +68,36 @@
 											<div class="back">
 												<div class="thumbnail">
 													<div class="caption">
-														<h3>Languages and Frameworks:</h3>
+														<h3>Languages</h3>
 														<small>
-															<ul class="list-unstyled">
-																<li>HTML5 / CSS3</li>
-																<li>ColdFusion</li>
-																<li>PHP</li>
-																<li>jQuery</li>
-																<li>Bootstrap</li>
-																<li>Node.js</li>
-																<li>Joomla</li>
-																<li>Wordpress</li>
-															</ul>
+															<div class="row">
+																<div class="col-xs-6" style="border-right: 1px solid #eee;">
+																	<ul class="list-unstyled text-left">
+																		<li><strong>Front End</strong></li>
+																		<li>AngularJS</li>
+																		<li>JavaScript</li>
+																		<li>CSS3</li>
+																		<li>HTML5</li>
+																		<li>Foundation</li>
+																		<li>Bootstrap</li>
+																		<li>Joomla</li>
+																		<li>Wordpress</li>
+																	</ul>
+																</div>
+																<div class="col-xs-6">
+																	<ul class="list-unstyled text-right">
+																		<li><strong>Back End</strong></li>
+																		<li>ColdFusion</li>
+																		<li>PHP</li>
+																		<li>Node.js</li>
+																		<li>WebSockets</li>
+																		<li>Git</li>
+																		<li>Grunt</li>
+																		<li>IIS</li>
+																		<li>Apache</li>
+																	</ul>
+																</div>
+															</div>
 														</small>
 													</div>
 												</div>
@@ -103,17 +121,26 @@
 											<div class="back">
 												<div class="thumbnail">
 													<div class="caption">
-														<h3>Systems:</h3>
+														<h3>Systems</h3>
 														<small>
 															<ul class="list-unstyled">
-																<br>
-																<li>Unix User Management</li>
-																<br>
-																<li>Active Directory</li>
-																<br>
-																<li>Windows Group Policy</li>
-																<br>
-																<li>Windows Domains</li>
+																<li><strong>*nix Derivatives</strong></li>
+																<div class="row">
+																	<div class="col-xs-6">
+																		<li>CentOS</li>
+																		<li>Ubuntu</li>
+																	</div>
+																	<div class="col-xs-6">
+																		<li>Linux Mint</li>
+																		<li>Arch</li>
+																	</div>
+																</div>
+																<hr>
+																<li><strong>Windows NT</strong></li>
+																<li>Windows Server 2012 &amp; R2</li>
+																<li>Windows Server 2008 &amp; R2</li>
+																<li>Windows Server 2003 &amp; R2</li>
+																<li>Windows XP, Vista, 7, 8, 8.1</li>
 															</ul>
 														</small>
 													</div>
@@ -142,14 +169,15 @@
 											<div class="back">
 												<div class="thumbnail">
 													<div class="caption">
-														<h3>Experience:</h3>
+														<h3>Experience</h3>
 														<small>
 															<ul class="list-unstyled">
-																<li>Current IT Major at NJIT</li>
-																<br>
+																<li><strong>Current</strong></li>
+																<li>Junior IT Major at NJIT</li>
+																<li>2 years at AdvancedGroup</li>
+																<hr>
+																<li><strong>Past</strong></li>
 																<li>2 years in the Kittatinny Regional High School IT Department</li>
-																<br>
-																<li>2 years at AdvancedGroup, maintaining servers and networks</li>
 															</ul>
 														</small>
 													</div>
@@ -174,16 +202,15 @@
 											<div class="back">
 												<div class="thumbnail">
 													<div class="caption">
-														<h3>Skills:</h3>
+														<h3>Tools</h3>
 														<small>
 															<ul class="list-unstyled">
-																<li>Data Visualization</li>
-																<li>Data Security</li>
-																<li>Database Design</li>
-																<li><i>Using:</i></li>
+																<hr>
 																<li>Microsoft SQL</li>
 																<li>MySQL</li>
-																<li>PostgreSQL</li>
+																<li>Oracle SQL</li>
+																<li>Microsoft Access</li>
+																<li>Redis</li>
 																<li>MongoDB</li>
 																<li>phpMyAdmin</li>
 															</ul>
