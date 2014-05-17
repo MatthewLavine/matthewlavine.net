@@ -23,7 +23,7 @@ function validateContact() {
 	//Name Check
 	if(document.forms["contactForm"]["name"].value.trim() == "") {
 		if(badName == false){
-			alertify.error("No Name Given!");
+			//alertify.error("No Name Given!");
 			$("#name").addClass("focusMe");
 			$("#name").parent().addClass("has-error");
 			$("#name").parent().append("<span class='label label-danger'>No Name Given</span>");
@@ -45,7 +45,7 @@ function validateContact() {
 
 	if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
 		if(badEmail == false){
-			alertify.error("Missing or Invalid Email!");
+			//alertify.error("Missing or Invalid Email!");
 			$("#email").addClass("focusMe");
 			$("#email").parent().addClass("has-error");
 			$("#email").parent().append("<span class='label label-danger'>Missing or Invalid Email</span>");
@@ -63,7 +63,7 @@ function validateContact() {
 	//Message Check
 	if(document.forms["contactForm"]["message"].value.trim() == "") {
 		if(badMessage == false){
-			alertify.error("No Message Given!");
+			//alertify.error("No Message Given!");
 			$("#message").addClass("focusMe");
 			$("#message").parent().addClass("has-error");
 			$("#message").parent().append("<span class='label label-danger'>No Message Given</span>");
@@ -108,7 +108,7 @@ function validateContact() {
     				$("#formStatus").fadeIn(100);
     			}, 100);
 
-    			alertify.success("Email Sent Successfully!");
+    			//alertify.success("Email Sent Successfully!");
     			
     			$("#submitButton").button('complete');
 				$("#submitButton").removeClass("btn-primary");
