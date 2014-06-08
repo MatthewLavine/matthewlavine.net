@@ -25,7 +25,6 @@
           <li role="presentation" class="divider"></li>
           <li role="presentation" class="dropdown-header">Personal Projects</li>
           <li><a href="http://chat.hardorange.org/" target="_blank">chat.hardorange.org</a></li>
-          <li><a href="http://krhs.net/" target="_blank">Kittatinny Regional High School</a></li>
           <li><a href="http://mckeown.org/" target="_blank">Marian E. McKeown School</a></li>
         </ul>
       </li>
