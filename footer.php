@@ -15,7 +15,7 @@
                  <?php if(isset($_GET['notfound'])){echo 'alertify.error("Error 404: That page was not found!");';}?>
                  $("#sayHello").text('');
                  $("#sayHello").typed({
-                    strings: ["","Hi.", "Welcome to my site!", "My name is Matthew Lavine."],
+                    strings: ["","Hi.", "My name is Matthew Lavine."],
                     typeSpeed: 50,
                     backDelay: 1500,
                     callback: function(){
