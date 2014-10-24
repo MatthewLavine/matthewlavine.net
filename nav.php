@@ -30,7 +30,7 @@
           <li class="disabled"><a href="#">HIST 386</a></li>
         </ul>
       </li>
-      <li><a target ="_blank" href="https://www.dropbox.com/s/lcma0we484n79dv/Resume.pdf">Resume</a></li>
+      <li><a target ="_blank" href="/Resume.pdf">Resume</a></li>
       <li><a data-toggle="tab" href="#contact">Contact Me</a></li>		
     </ul>
     <ul class="nav navbar-nav navbar-right">
