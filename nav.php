@@ -17,24 +17,23 @@
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
-          <li role="presentation" class="dropdown-header">Class Projects</li>
-          <li><a href="#" data-toggle="modal" data-target="#it114">IT114</a></li>
-          <li class="disabled"><a href="#">IT201</a></li>
-          <li class="disabled"><a href="#">IT202</a></li>
-          <li><a target="_blank" href="http://wickr-dev.voltagenj.com/">IT310 (Wickr)</a></li>
-          <li role="presentation" class="divider"></li>
           <li role="presentation" class="dropdown-header">Personal Projects</li>
           <li><a href="http://chat.hardorange.org/" target="_blank">chat.hardorange.org</a></li>
-          <li><a href="http://mckeown.org/" target="_blank">Marian E. McKeown School</a></li>
+          <li><a href="/Interactive-Resume/" target="_blank">Interactive Resume</a></li>
+          <li role="presentation" class="divider"></li>
+          <li role="presentation" class="dropdown-header">Current Classes</li>
+          <li class="disabled"><a href="#">MGMT 390</a></li>
+          <li class="disabled"><a href="#">IT 340</a></li>
+          <li class="disabled"><a href="#">IT 331</a></li>
+          <li class="disabled"><a href="#">IS 331</a></li>
+          <li class="disabled"><a href="#">IT 330</a></li>
+          <li class="disabled"><a href="#">HIST 386</a></li>
         </ul>
       </li>
       <li><a target ="_blank" href="https://www.dropbox.com/s/lcma0we484n79dv/Resume.pdf">Resume</a></li>
       <li><a data-toggle="tab" href="#contact">Contact Me</a></li>		
     </ul>
     <ul class="nav navbar-nav navbar-right">
-     <!--<li><a href="#">Facebook</a></li>-->
-     <!--<li><a href="#">Twitter</a></li>-->
-     <!--<li><a target="_blank" href="http://advancedgroup.net/">AdvancedGroup</a></li>-->
      <li><a target="_blank" href="https://www.linkedin.com/in/lavine"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
      <li><a target="_blank" href="https://github.com/MatthewLavine"><i class="fa fa-github"></i> GitHub</a></li>
    </ul>
