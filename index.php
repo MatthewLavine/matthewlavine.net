@@ -1,4 +1,3 @@
-<?php require_once 'application.php' ?>
 <?php include 'header.php' ?>
 </head>
 
