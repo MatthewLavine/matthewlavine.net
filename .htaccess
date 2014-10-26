@@ -1,5 +1,9 @@
 ErrorDocument 404 /index.php?notfound=true
 
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
 <ifModule mod_deflate.c>
   	<filesMatch "\.(css|js|x?html?|php)$">
 	    SetOutputFilter DEFLATE
