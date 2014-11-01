@@ -18,7 +18,7 @@
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
           <li role="presentation" class="dropdown-header">Personal Projects</li>
-          <li><a href="http://chat.hardorange.org/" target="_blank">chat.hardorange.org</a></li>
+          <li><a href="http://chat.hardorange.org/" target="_blank">NodeJS Chat</a></li>
           <li><a href="/interactive" target="_blank">Terminal Emulator</a></li>
           <li role="presentation" class="divider"></li>
           <li role="presentation" class="dropdown-header">Current Classes</li>
