@@ -84,7 +84,6 @@ li {
 /* Header */
 
 .info {
-	padding-top: 3em;
 	padding-top: 25%;
 	text-align: center;
 }
@@ -128,7 +127,7 @@ li {
 	height: 0px;
 	top:8em;
 	border-style: solid;
-	border-width: 2em 2em 0 2em;
+	border-width: 1em 1em 0 1em;
 	border-color: #3a3a3a transparent transparent transparent;
 	-webkit-transform:rotate(360deg)
 }
