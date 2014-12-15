@@ -57,6 +57,7 @@ a:hover {
 	color: #34A9FF;
 	background: #333;
 	color: #fcfcfc !important;
+	border-radius: 2px;
 }
 
 .noblock:hover {
