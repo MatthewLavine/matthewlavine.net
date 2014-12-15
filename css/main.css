@@ -15,7 +15,7 @@ html, body {
 }
 
 .content-container {
-	
+
 }
 
 section, footer {
@@ -83,6 +83,8 @@ li {
 }
 
 .info > h1 {
+	border-top: 1px solid #999;
+	padding-top:5px;
 	text-transform: uppercase;
 }
 
@@ -133,7 +135,7 @@ li {
 /* About */
 
 .about {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .about p {
@@ -159,9 +161,9 @@ li {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	//border-top: 1px solid #999;
+	border-top: 1px solid #999;
 	font-size: 14px;
-	margin: 10px auto 50px auto;
+	margin: 10px auto 40px auto;
 	padding-top: 20px;
 	color: #999;
 	font-style: italic;
