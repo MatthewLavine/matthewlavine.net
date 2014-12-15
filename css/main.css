@@ -3,6 +3,7 @@ html, body {
 	color: #3a3a3a;
 	margin: 0;
 	padding: 0;
+    overflow-y:hidden
 }
 
 ::selection {
@@ -29,7 +30,8 @@ html, body {
 
 section, footer {
 	opacity: 0;
-	display:none;
+	display:inline-block;
+	visibility: hidden;
 	width: 100%;
 }
 
@@ -104,28 +106,12 @@ li {
 	padding: 0 20px;
 }
 
-.arrow-wrap {
-	position:absolute;
-	z-index:1;
-	left:50%;
-	top:5em;
-	margin-left:-5em;
-	background:#FFFFFA;
-	width:10em;
-	height:10em;
-	padding:4em 2em;
-	border-radius:50%;
-	font-size:0.5em;
-	display:block;
-	box-shadow:0px 0px 5px 0px #333;
-}
-
 .arrow {
 	cursor: pointer;
 	position:relative;
 	width: 0px;
 	height: 0px;
-	top:8em;
+	top:7em;
 	border-style: solid;
 	border-width: 1em 1em 0 1em;
 	border-color: #3a3a3a transparent transparent transparent;

@@ -5,11 +5,10 @@ $(function() {
     } else {
         function doScroll() {
             $(".arrow").animate({"opacity" : "0"}, 200, function() {
-                $(".arrow").css("display", "none");
+                $(".arrow").css("visibility", "hidden");
             })
-            $(".info").animate({"padding-top":"3em"}, 500, function() {
-                $("section, footer").css("display", "inline-block").animate({"opacity" : "1"}, 400);
-            });
+            $(".info").animate({"padding-top":"3em"}, 500);
+            $("section, footer").delay(200).css("visibility", "visible").animate({"opacity" : "1"}, 500);
             $(window).unbind('mousewheel DOMMouseScroll', handler);
         }
 
