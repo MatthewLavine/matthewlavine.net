@@ -200,6 +200,19 @@ li {
 /* Media Queries */
 
 @media (max-width: 906px) {
+	.arrow {
+		display: none;
+	}
+
+	section, footer {
+		display: inline-block;
+		opacity: 1;
+	}
+
+	.info {
+		padding-top: 3em;
+	}
+
 	.avatar {
 		width: 66px;
 		height: 100px;
@@ -225,10 +238,6 @@ li {
 
 	h1 {
 		font-size: 40px;
-	}
-
-	.info {
-		padding-top: 100px;
 	}
 
 	.social span {
