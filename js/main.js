@@ -4,10 +4,10 @@ $(function() {
         // disable interactivity
     } else {
         function doScroll() {
-            $(".arrow").animate({"opacity" : "0"}, 300, function() {
+            $(".arrow").animate({"opacity" : "0"}, 200, function() {
                 $(".arrow").css("display", "none");
             })
-            $(".info").animate({"padding-top":"3em"}, 600, function() {
+            $(".info").animate({"padding-top":"3em"}, 500, function() {
                 $("section, footer").css("display", "inline-block").animate({"opacity" : "1"}, 400);
             });
             $(window).unbind('mousewheel DOMMouseScroll', handler);
