@@ -96,6 +96,13 @@ li {
 	cursor: default;
 }
 
+.info h2 {
+	color: #777;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	cursor: default;
+}
+
 .social li {
 	display: inline;
 	font-size: 12px;
@@ -191,6 +198,7 @@ li {
 
 	section, footer {
 		display: inline-block;
+		visibility: visible;
 		opacity: 1;
 	}
 
