@@ -136,7 +136,7 @@ li {
 .arrow:after {
 	content:'';
 	position:absolute;
-	top:-3.3em;
+	top:-3.2em;
 	left:-3em;
 	width: 0px;
 	height: 0px;
