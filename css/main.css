@@ -6,10 +6,10 @@ html, body {
 }
 
 ::selection {
-  background: #ffb7b7;
+	background: #ffb7b7;
 }
 ::-moz-selection {
-  background: #ffb7b7;
+	background: #ffb7b7;
 }
 
 .container {
@@ -28,7 +28,8 @@ html, body {
 }
 
 section, footer {
-	display: inline-block;
+	opacity: 0;
+	display:none;
 	width: 100%;
 }
 
@@ -84,6 +85,7 @@ li {
 
 .info {
 	padding-top: 3em;
+	padding-top: 40%;
 	text-align: center;
 }
 
@@ -101,6 +103,47 @@ li {
 
 .social span {
 	padding: 0 20px;
+}
+
+.arrow-wrap {
+	position:absolute;
+	z-index:1;
+	left:50%;
+	top:5em;
+	margin-left:-5em;
+	background:#FFFFFA;
+	width:10em;
+	height:10em;
+	padding:4em 2em;
+	border-radius:50%;
+	font-size:0.5em;
+	display:block;
+	box-shadow:0px 0px 5px 0px #333;
+}
+
+.arrow {
+	cursor: pointer;
+	position:relative;
+	width: 0px;
+	height: 0px;
+	top:8em;
+	border-style: solid;
+	border-width: 2em 2em 0 2em;
+	border-color: #3a3a3a transparent transparent transparent;
+	-webkit-transform:rotate(360deg)
+}
+
+.arrow:after {
+	content:'';
+	position:absolute;
+	top:-3.3em;
+	left:-3em;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 3em 3em 0 3em;
+	border-color: #FFFFFA transparent transparent transparent;
+	-webkit-transform:rotate(360deg)
 }
 
 /* Work */
