@@ -50,7 +50,7 @@ a {
 	padding-right: 5px;
 	margin-left: -5px;
 	text-decoration: none;
-	transition: all .06s linear;
+	transition: all .175s linear;
 }
 
 a:hover {
