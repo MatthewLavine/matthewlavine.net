@@ -6,10 +6,10 @@ html, body {
 }
 
 ::selection {
-  background: #ffb7b7; /* WebKit/Blink Browsers */
+  background: #ffb7b7;
 }
 ::-moz-selection {
-  background: #ffb7b7; /* Gecko Browsers */
+  background: #ffb7b7;
 }
 
 .container {
@@ -65,13 +65,8 @@ a {
 a:hover {
 	color: #34A9FF;
 	background: #333;
-	color: #fcfcfc !important;
+	color: #fcfcfc;
 	border-radius: 2px;
-}
-
-.noblock:hover {
-	color: #3a3a3a !important;
-	background: #fff !important;
 }
 
 ul {
@@ -95,26 +90,13 @@ li {
 .info > h1 {
 	padding-top:5px;
 	text-transform: uppercase;
-}
-
-.avatar {
-	height: 164px;
-	padding-bottom: 20px;
-	width: 106px;
+	cursor: default;
 }
 
 .social li {
 	display: inline;
 	font-size: 12px;
 	letter-spacing: 2px;
-}
-
-.social li a {
-	color: #3a3a3a;
-}
-
-.social li a:hover {
-	color: #34A9FF;
 }
 
 .social span {
@@ -128,12 +110,7 @@ li {
 }
 
 .work a {
-	color: #3a3a3a;
 	letter-spacing: 0.02em;
-}
-
-.work a:hover {
-	color: #34A9FF;
 }
 
 .work span {
