@@ -59,5 +59,16 @@ $(function() {
         }, function() {
             $(".skill-container").children().removeClass('highlight');
         });
+        $('.skill-container > span').hover(function() {
+            var tech = $(this).contents().text();
+            $('.project > a').each(function() {
+                if($(this).data('technologies').split(', ').indexOf(tech) > 0) {
+                    $(this).addClass('highlight');
+                }
+            });
+            
+        }, function() {
+            $('.project > a').removeClass('highlight');
+        });
     }
 });
