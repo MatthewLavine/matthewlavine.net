@@ -62,7 +62,7 @@ $(function() {
         $('.skill-container > span').hover(function() {
             var tech = $(this).contents().text();
             $('.project > a').each(function() {
-                if($(this).data('technologies').split(', ').indexOf(tech) > 0) {
+                if($(this).data('technologies').split(', ').indexOf(tech) > -1) {
                     $(this).addClass('highlight');
                 }
             });
