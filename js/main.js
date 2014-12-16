@@ -13,13 +13,15 @@ $(function() {
         }
 
         var handler = function(event){
+            event.preventDefault();
+            event.stopPropagation();
             if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
             // mouse scrolled up
             } else {
                 doScroll();
             }
         }
-        $(window).bind('mousewheel DOMMouseScroll', handler);
+        $(window).bind('mousewheel DOMMouseScroll touchmove', handler);
         $(".arrow").click(doScroll);
 
         function shuffleArray(array) {
