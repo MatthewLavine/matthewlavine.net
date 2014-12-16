@@ -33,6 +33,7 @@ section, footer {
 	display:inline-block;
 	visibility: hidden;
 	width: 100%;
+	-webkit-transform: translateZ(0);
 }
 
 h1 {
