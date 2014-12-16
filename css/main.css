@@ -66,7 +66,6 @@ a {
 }
 
 a:hover {
-	color: #34A9FF;
 	background: #333;
 	color: #fcfcfc;
 	border-radius: 2px;
@@ -142,6 +141,8 @@ li {
 
 .work {
 	margin: 75px 0 75px 0;
+	float:left;
+	width:50%;
 }
 
 .work a {
@@ -152,6 +153,32 @@ li {
 	font-style: italic;
 	font-size: 12px;
 	padding-left: 15px;
+}
+
+/* Cloud */
+
+.cloud {
+	margin: 75px 0 75px 0;
+	float:left;
+	width:50%;
+	text-align: right;
+}
+
+.cloud span {
+	display: inline-block;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-right: 3px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.highlight {
+	background: #333;
+	border-radius: 2px;
+	color: #fcfcfc;
 }
 
 /* About */
@@ -204,6 +231,14 @@ li {
 
 	.info {
 		padding-top: 3em;
+	}
+
+	.work {
+		width:100%;
+	}
+
+	.cloud {
+		display:none;
 	}
 
 	.avatar {
