@@ -51,7 +51,6 @@ $(function() {
                 $(".skill-container").children().each(function() {
                     var k = $(this).contents().text();
                     if(p == k) {
-                        console.log($(this));
                         $(this).addClass('highlight');
                     }
                 });
