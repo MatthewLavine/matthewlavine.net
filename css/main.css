@@ -229,6 +229,7 @@ li {
 /* Media Queries */
 
 @media (max-width: 906px) {
+	/*
 	.arrow {
 		display: none;
 	}
@@ -242,7 +243,8 @@ li {
 	.info {
 		padding-top: 3em;
 	}
-
+	*/
+	
 	.work {
 		width:100%;
 	}
@@ -251,13 +253,12 @@ li {
 		display:none;
 	}
 
-	.avatar {
-		width: 66px;
-		height: 100px;
-	}
-
 	h1 {
 		font-size: 50px;
+	}
+
+	.info h2 {
+		font-size: 16px;
 	}
 
 	.social span {
@@ -275,8 +276,12 @@ li {
 	}
 
 	h1 {
-		font-size: 40px;
+		font-size: 25px;
 	}	
+
+	.info h2 {
+		font-size: 10px;
+	}
 
 	.social span {
 		padding: 0 2px;
