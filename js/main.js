@@ -19,7 +19,9 @@ $(function() {
         event.stopPropagation();
         if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
             // mouse scrolled up
+            doScroll();
         } else {
+            // mouse scrolled down
             doScroll();
         }
     }
