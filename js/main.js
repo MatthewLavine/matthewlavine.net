@@ -6,7 +6,7 @@ $(function() {
     });
 
     function doScroll() {
-        $(".arrow").animate({"opacity" : "0"}, 200, function() {
+        $(".arrow").animate({"opacity" : "0", "bottom" : "7em"}, 200, function() {
             $(".arrow").css("visibility", "hidden");
         })
         $(".info").animate({"padding-top":"3em"}, 500);

@@ -122,15 +122,18 @@ li {
 }
 
 .arrow {
-	cursor: pointer;
-	position:relative;
+	position:absolute;
 	width: 0px;
 	height: 0px;
-	top:20em;
+	bottom:10em;
+	left: 0;
+	right: 0;
+	margin:auto;
+	cursor: pointer;
 	border-style: solid;
 	border-width: 1em 1em 0 1em;
 	border-color: #3a3a3a transparent transparent transparent;
-	-webkit-transform:rotate(360deg)
+	-webkit-transform:rotate(360deg);
 }
 
 .arrow:after {
@@ -142,8 +145,8 @@ li {
 	height: 0px;
 	border-style: solid;
 	border-width: 3em 3em 0 3em;
-	border-color: #FFFFFA transparent transparent transparent;
-	-webkit-transform:rotate(360deg)
+	border-color: #FFFFFA  transparent transparent transparent;
+	-webkit-transform:rotate(360deg);
 }
 
 /* Work */
