@@ -10,7 +10,7 @@ $(function() {
             $(".arrow").css("visibility", "hidden");
         })
         $(".info").animate({"padding-top":"3em"}, 500);
-        $("section, footer").delay(200).css("visibility", "visible").animate({"opacity" : "1"}, 500);
+        $("section, footer").delay(200).css("height", "auto").css("visibility", "visible").animate({"opacity" : "1"}, 500);
         $(window).unbind('mousewheel DOMMouseScroll touchmove', handler);
     }
 

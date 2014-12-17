@@ -33,6 +33,7 @@ section, footer {
 	display:inline-block;
 	visibility: hidden;
 	width: 100%;
+	height:0;
 	-webkit-transform: translateZ(0);
 }
 
