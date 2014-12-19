@@ -125,7 +125,7 @@ li {
 	position:absolute;
 	width: 0px;
 	height: 0px;
-	bottom:10em;
+	bottom:10vh;
 	left: 0;
 	right: 0;
 	margin:auto;
@@ -276,7 +276,7 @@ li {
 
 @media (max-width: 570px) {
 	.arrow {
-		bottom:1em;
+		bottom:5vh;
 	}
 
 	.container {
