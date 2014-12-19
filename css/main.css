@@ -275,6 +275,10 @@ li {
 }
 
 @media (max-width: 570px) {
+	.arrow {
+		bottom:1em;
+	}
+
 	.container {
 		width: 90%;
 	}
