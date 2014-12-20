@@ -14,6 +14,9 @@ $(function() {
             $(".work, .cloud").css("height", "auto").css("visibility", "visible").animate({"opacity" : "1"}, 500);
             $(".about, footer").css("height", "auto").css("visibility", "visible").animate({"opacity" : "1"}, 500);
         }, 200);
+        setTimeout(function() {
+            $('body, html').css("overflow-y", "visible");
+        }, 700);
         $(window).unbind('mousewheel DOMMouseScroll touchmove', handler);
     }
 
