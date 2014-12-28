@@ -65,12 +65,12 @@ a {
 	margin-left: -5px;
 	text-decoration: none;
 	transition: all .175s linear;
+	border-radius: 2px;
 }
 
 a:hover {
 	background: #333;
 	color: #fcfcfc;
-	border-radius: 2px;
 }
 
 ul {
@@ -187,12 +187,12 @@ li {
 	margin-top: 3px;
 	margin-bottom: 3px;
 	transition: all .175s linear;
+	border-radius: 2px;
 }
 
 .cloud span:hover {
 	background: #333;
 	color: #fcfcfc;
-	border-radius: 2px;
 }
 
 /* About */
