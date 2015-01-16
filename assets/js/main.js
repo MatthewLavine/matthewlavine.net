@@ -23,14 +23,8 @@ $(function() {
     var handler = function(event){
         event.preventDefault();
         event.stopPropagation();
-        if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
-            // mouse scrolled up
-            doScroll();
-        } else {
-            // mouse scrolled down
-            doScroll();
-        }
-    }
+        doScroll();
+    };
     $(window).bind('mousewheel DOMMouseScroll touchmove', handler);
     $(".arrow").click(doScroll);
 
@@ -55,7 +49,7 @@ $(function() {
     techs = shuffleArray(techs);
     $.each(techs, function() {
         $('.skill-container').append(this);
-    })
+    });
     $('.project > a').hover(function() {
         var proj = $(this);
         $.each(proj.data('technologies').split(', '), function() {

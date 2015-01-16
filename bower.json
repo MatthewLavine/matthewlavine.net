@@ -1,0 +1,14 @@
+{
+  "name": "matthewlavine.net",
+  "version": "2.0.0",
+  "homepage": "https://www.matthewlavine.net",
+  "authors": [
+    "Matthew Lavine <hermitlavine@gmail.com>"
+  ],
+  "description": "My personal portfolio website",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}

@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:600,400|Oswald);
+
 html, body {
 	background: #FFFFFA;
 	color: #3a3a3a;
@@ -43,7 +45,6 @@ h1 {
 	font-size: 80px;
 	font-weight: 400;
 	letter-spacing: 7px;
-	margin-bottom: 10px;
 	margin: 0;
 }
 
@@ -58,10 +59,7 @@ h2 {
 a {
 	color: #3a3a3a;
 	display: inline-block;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding: 2px 5px 2px 5px;
 	margin-left: -5px;
 	text-decoration: none;
 	transition: all .175s linear;
@@ -123,8 +121,8 @@ li {
 
 .arrow {
 	position:absolute;
-	width: 0px;
-	height: 0px;
+	width: 0;
+	height: 0;
 	bottom:10vh;
 	left: 0;
 	right: 0;
@@ -141,8 +139,8 @@ li {
 	position:absolute;
 	top:-3.2em;
 	left:-3em;
-	width: 0px;
-	height: 0px;
+	width: 0;
+	height: 0;
 	border-style: solid;
 	border-width: 3em 3em 0 3em;
 	border-color: #FFFFFA  transparent transparent transparent;
@@ -179,10 +177,7 @@ li {
 .cloud span {
 	display: inline-block;
 	cursor: default;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding: 2px 5px 2px 5px;
 	margin-right: 3px;
 	margin-top: 3px;
 	margin-bottom: 3px;
@@ -220,8 +215,6 @@ li {
 
 .copyright {
 	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
 	text-align: center;
 	font-size: 14px;
 	margin: 10px auto 40px auto;
