@@ -150,7 +150,7 @@ li {
 /* Work */
 
 .work {
-	margin: 75px 0 75px 0;
+	margin: 75px 0 50px 0;
 	float:left;
 	width:50%;
 }
@@ -168,7 +168,7 @@ li {
 /* Cloud */
 
 .cloud {
-	margin: 75px 0 75px 0;
+	margin: 75px 0 50px 0;
 	float:left;
 	width:50%;
 	text-align: right;
@@ -192,7 +192,7 @@ li {
 /* About */
 
 .about {
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 }
 
 .about p {
@@ -216,8 +216,7 @@ li {
 	width: 80%;
 	text-align: center;
 	font-size: 14px;
-	margin: 10px auto 40px auto;
-	padding-top: 20px;
+	margin: 0 auto 20px auto;
 	color: #999;
 	letter-spacing: 1px;
 }
