@@ -8,7 +8,7 @@ $(function() {
     function doScroll() {
         $(".arrow").animate({"opacity" : "0", "bottom" : 3*parseInt($('.arrow').css('bottom'))/5}, 200, function() {
             $(".arrow").css("visibility", "hidden");
-        })
+        });
         $(".info").animate({"padding-top":"3em"}, 500);
         setTimeout(function() {
             $(".work, .cloud").css("height", "auto").css("visibility", "visible").animate({"opacity" : "1"}, 500);
