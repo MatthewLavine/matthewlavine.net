@@ -1,302 +1,356 @@
 @import url(//fonts.googleapis.com/css?family=Raleway:600,400|Oswald);
 
 html, body {
-	background: #FFFFFA;
-	color: #3a3a3a;
-	margin: 0;
-	padding: 0;
-    overflow-y:hidden;
+    background: #FFFFFA;
+    color: #3a3a3a;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
 }
 
 ::selection {
-	background: #ffb7b7;
+    background: #ffb7b7;
 }
+
 ::-moz-selection {
-	background: #ffb7b7;
+    background: #ffb7b7;
 }
 
 .container {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
-	height: 100%;
-	margin: 0 auto;
-	max-width: 960px;
-	width: 80%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 960px;
+    width: 80%;
 }
 
 .content-container {
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section, footer {
-	opacity: 0;
-	display:inline-block;
-	visibility: hidden;
-	width: 100%;
-	height:0;
-	-webkit-transform: translateZ(0);
+    opacity: 0;
+    display: inline-block;
+    visibility: hidden;
+    width: 100%;
+    height: 0;
+    -webkit-transform: translateZ(0);
 }
 
 h1 {
-	color: #3a3a3a;
-	font-family: 'Oswald', sans-serif;
-	font-size: 80px;
-	font-weight: 400;
-	letter-spacing: 7px;
-	margin: 0;
+    color: #3a3a3a;
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: 7px;
+    margin: 0;
 }
 
 h2 {
-	font-size: 22px;
-	font-weight: 600;
-	letter-spacing: 0.1em;
-	margin-bottom: 20px;
-	margin-top: 0;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    margin-top: 0;
 }
 
 a {
-	color: #3a3a3a;
-	display: inline-block;
-	padding: 2px 5px 2px 5px;
-	margin-left: -5px;
-	text-decoration: none;
-	transition: all .175s linear;
-	border-radius: 2px;
+    color: #3a3a3a;
+    display: inline-block;
+    padding: 2px 5px 2px 5px;
+    margin-left: -5px;
+    text-decoration: none;
+    transition: all .175s linear;
+    border-radius: 2px;
 }
 
 a:hover {
-	background: #333;
-	color: #fcfcfc;
+    background: #333;
+    color: #fcfcfc;
 }
 
 ul {
-	list-style-type: none;
-	margin: 0;
-	padding-left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
 }
 
 li {
-	font-size: 16px;
-	padding-bottom: 16px;
+    font-size: 16px;
+    padding-bottom: 16px;
 }
 
 .highlight {
-	background: #333;
-	border-radius: 2px;
-	color: #fcfcfc;
-	transition: all .175s linear;
+    background: #333;
+    border-radius: 2px;
+    color: #fcfcfc;
+    transition: all .175s linear;
 }
 
 /* Header */
 
 .info {
-	padding-top: 25vh;
-	text-align: center;
+    padding-top: 25vh;
+    text-align: center;
 }
 
 .info > h1 {
-	padding-top:5px;
-	text-transform: uppercase;
-	cursor: default;
+    padding-top: 5px;
+    text-transform: uppercase;
+    cursor: default;
 }
 
 .info h2 {
-	color: #777;
-	letter-spacing: 0.15em;
-	text-transform: uppercase;
-	cursor: default;
+    color: #777;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    cursor: default;
 }
 
 .social li {
-	display: inline;
-	font-size: 12px;
-	letter-spacing: 2px;
+    display: inline;
+    font-size: 12px;
+    letter-spacing: 2px;
 }
 
 .social span {
-	padding: 0 20px;
+    padding: 0 20px;
 }
 
 .arrow {
-	position:absolute;
-	width: 0;
-	height: 0;
-	bottom:10vh;
-	left: 0;
-	right: 0;
-	margin:auto;
-	cursor: pointer;
-	border-style: solid;
-	border-width: 1em 1em 0 1em;
-	border-color: #3a3a3a transparent transparent transparent;
-	-webkit-transform:rotate(360deg);
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 10vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1em 1em 0 1em;
+    border-color: #3a3a3a transparent transparent transparent;
+    -webkit-transform: rotate(360deg);
 }
 
 .arrow:after {
-	content:'';
-	position:absolute;
-	top:-3.2em;
-	left:-3em;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 3em 3em 0 3em;
-	border-color: #FFFFFA  transparent transparent transparent;
-	-webkit-transform:rotate(360deg);
+    content: '';
+    position: absolute;
+    top: -3.2em;
+    left: -3em;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 3em 3em 0 3em;
+    border-color: #FFFFFA transparent transparent transparent;
+    -webkit-transform: rotate(360deg);
+}
+
+.content-container section:first-child {
+    margin-top: 75px;
+}
+
+/* Profile */
+
+.profile {
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 50px;
+    width: auto;
+}
+
+.picture {
+    float: left;
+    width: 35%
+}
+
+.blurb {
+    float: right;
+    width: 65%;
+    margin-top: 35px;
+}
+
+.blurb p {
+    text-align: justify;
+    color: #3a3a3a;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+
+.blurb span {
+    font-weight: 600;
 }
 
 /* Work */
 
 .work {
-	margin: 75px 0 50px 0;
-	float:left;
-	width:50%;
+    margin-bottom: 50px;
+    float: left;
+    width: 50%;
 }
 
 .work a {
-	letter-spacing: 0.02em;
+    letter-spacing: 0.02em;
 }
 
 .work span {
-	font-style: italic;
-	font-size: 12px;
-	padding-left: 15px;
+    font-style: italic;
+    font-size: 12px;
+    padding-left: 15px;
 }
 
 /* Cloud */
 
 .cloud {
-	margin: 75px 0 50px 0;
-	float:left;
-	width:50%;
-	text-align: right;
+    margin-bottom: 50px;
+    float: left;
+    width: 50%;
+    text-align: right;
 }
 
 .cloud span {
-	display: inline-block;
-	cursor: default;
-	padding: 2px 5px 2px 5px;
-	margin-right: 3px;
-	margin-bottom: 16px;
-	transition: all .175s linear;
-	border-radius: 2px;
+    display: inline-block;
+    cursor: default;
+    padding: 2px 5px 2px 5px;
+    margin-right: 3px;
+    margin-bottom: 16px;
+    transition: all .175s linear;
+    border-radius: 2px;
 }
 
 .cloud span:hover {
-	background: #333;
-	color: #fcfcfc;
+    background: #333;
+    color: #fcfcfc;
 }
 
 /* About */
 
 .about {
-	margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .about p {
-	color: #3a3a3a;
-	font-size: 16px;
-	line-height: 22px;
-	letter-spacing: 0.02em;
+    color: #3a3a3a;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
 }
 
 .about span {
-	font-weight: 600;
+    font-weight: 600;
 }
 
 .bio {
-	text-align: justify;
+    text-align: justify;
 }
 
 /* Footer */
 
 .copyright {
-	width: 80%;
-	text-align: center;
-	font-size: 14px;
-	margin: 0 auto 20px auto;
-	color: #999;
-	letter-spacing: 1px;
+    width: 80%;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 auto 20px auto;
+    color: #999;
+    letter-spacing: 1px;
 }
 
 /* Media Queries */
 
 @media (max-width: 906px) {
-	/*
-	.arrow {
-		display: none;
-	}
+    /*
+    .arrow {
+        display: none;
+    }
 
-	section, footer {
-		display: inline-block;
-		visibility: visible;
-		opacity: 1;
-	}
+    section, footer {
+        display: inline-block;
+        visibility: visible;
+        opacity: 1;
+    }
 
-	.info {
-		padding-top: 3em;
-	}
-	*/
+    .info {
+        padding-top: 3em;
+    }
+    */
 
-	.work {
-		width:100%;
-	}
+    .profile {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
-	.cloud {
-		display:none;
-	}
+    .picture {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
-	h1 {
-		font-size: 50px;
-	}
+    .blurb {
+        margin-top:0;
+        width: 100%;
+    }
 
-	.info h2 {
-		font-size: 15px;
-	}
+    .work {
+        width: 100%;
+    }
 
-	.social span {
-		padding: 0 4px;
-	}
+    .cloud {
+        display: none;
+    }
 
-	.bio {
-		width: 100%;
-	}
+    h1 {
+        font-size: 50px;
+    }
+
+    .info h2 {
+        font-size: 15px;
+    }
+
+    .social span {
+        padding: 0 4px;
+    }
+
+    .bio {
+        width: 100%;
+    }
 }
 
 @media (max-width: 570px) {
-	.arrow {
-		bottom:5vh;
-	}
+    .arrow {
+        bottom: 5vh;
+    }
 
-	.container {
-		width: 90%;
-	}
+    .container {
+        width: 90%;
+    }
 
-	h1 {
-		font-size: 40px;
-	}	
+    h1 {
+        font-size: 40px;
+    }
 
-	.info h2 {
-		font-size: 13px;
-	}
+    .info h2 {
+        font-size: 13px;
+    }
 
-	.social span {
-		padding: 0 2px;
-	}
+    .social span {
+        padding: 0 2px;
+    }
 
-	.social a {
-		font-size: 10px;
-	}
+    .social a {
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 480px) {
-	h1 {
-		font-size: 25px;
-	}	
+    h1 {
+        font-size: 25px;
+    }
 
-	.info h2 {
-		font-size: 9px;
-	}
+    .info h2 {
+        font-size: 9px;
+    }
 }

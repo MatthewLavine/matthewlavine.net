@@ -37,6 +37,15 @@ module.exports = function (grunt) {
                 }
             }
         },
+        watch: {
+            scripts: {
+                files: ['assets/**/*'],
+                tasks: ['concat', 'uglify', 'cssmin', 'htmlmin', 'clean'],
+                options: {
+                    spawn: false
+                }
+            }
+        },
         clean: {
             css: ['public/css/*.css', '!public/css/*.min.css'],
             js: ['public/js/*.js', '!public/js/*.min.js' ]
@@ -48,6 +57,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('build', ['concat', 'uglify', 'cssmin', 'htmlmin', 'clean']);
 
