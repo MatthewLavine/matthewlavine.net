@@ -11,8 +11,7 @@ $(function() {
         });
         $(".info").animate({"padding-top":"3em"}, 500);
         setTimeout(function() {
-            $(".work, .cloud").css("height", "auto").css("visibility", "visible").animate({"opacity" : "1"}, 500);
-            $(".about, footer").css("height", "auto").css("visibility", "visible").animate({"opacity" : "1"}, 500);
+            $("section, footer").css("height", "auto").css("visibility", "visible").animate({"opacity" : "1"}, 500);
         }, 200);
         setTimeout(function() {
             $('body, html').css("overflow-y", "visible");
