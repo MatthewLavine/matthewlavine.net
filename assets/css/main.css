@@ -118,6 +118,7 @@ li {
 
 .social span {
     padding: 0 20px;
+    font-size: 12px;
 }
 
 .arrow {
@@ -308,10 +309,15 @@ li {
 
     .info h2 {
         font-size: 15px;
+        margin-bottom: 10px;
     }
 
     .social span {
         padding: 0 4px;
+    }
+
+    .social a {
+        padding-right: 0;
     }
 
     .bio {
@@ -341,7 +347,7 @@ li {
     }
 
     .social a {
-        font-size: 10px;
+        padding-right: 0;
     }
 }
 
@@ -352,5 +358,14 @@ li {
 
     .info h2 {
         font-size: 9px;
+        margin-bottom: 0;
+    }
+
+    .social span {
+        font-size: 8px;
+    }
+
+    .social a {
+        font-size: 8px;
     }
 }
