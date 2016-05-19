@@ -1,7 +1,7 @@
 @import url(//fonts.googleapis.com/css?family=Raleway:600,400|Oswald);
 
 html, body {
-    background: #FFFFFA;
+    background: #fffffa;
     color: #3a3a3a;
     margin: 0;
     padding: 0;
@@ -37,7 +37,6 @@ section, footer {
 }
 
 h1 {
-    color: #3a3a3a;
     font-family: 'Oswald', sans-serif;
     font-size: 80px;
     font-weight: 400;
@@ -64,8 +63,8 @@ a {
 }
 
 a:hover {
-    background: #333;
-    color: #fcfcfc;
+    background: #3a3a3a;
+    color: #fffffa;
 }
 
 ul {
@@ -80,9 +79,9 @@ li {
 }
 
 .highlight {
-    background: #333;
+    background: #3a3a3a;
     border-radius: 2px;
-    color: #fcfcfc;
+    color: #fffffa;
     transition: all .175s linear;
 }
 
@@ -192,8 +191,8 @@ li {
 }
 
 .cloud span:hover {
-    background: #333;
-    color: #fcfcfc;
+    background: #3a3a3a;
+    color: #fffffa;
 }
 
 /* About */
