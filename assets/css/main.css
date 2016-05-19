@@ -33,6 +33,7 @@ html, body {
 section, footer {
     display: inline-block;
     width: 100%;
+    margin-top: 50px;
     -webkit-transform: translateZ(0);
 }
 
@@ -116,16 +117,11 @@ li {
     font-size: 12px;
 }
 
-.content-container section:first-child {
-    margin-top: 50px;
-}
-
 /* Profile */
 
 .profile {
     margin-left: 7%;
     margin-right: 7%;
-    margin-bottom: 50px;
     width: auto;
 }
 
@@ -156,7 +152,6 @@ li {
 /* Work */
 
 .work {
-    margin-bottom: 50px;
     float: left;
     width: 65%;
 }
@@ -174,7 +169,6 @@ li {
 /* Cloud */
 
 .cloud {
-    margin-bottom: 50px;
     float: left;
     width: 35%;
     text-align: right;
@@ -196,10 +190,6 @@ li {
 }
 
 /* About */
-
-.about {
-    margin-bottom: 50px;
-}
 
 .about p {
     color: #3a3a3a;
