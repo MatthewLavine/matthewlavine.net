@@ -1,32 +1,4 @@
 $(function() {
-    $(document).ready(function() {
-        $('body, html').animate({
-            scrollTop: 0
-        }, 'fast');
-    });
-
-    function doScroll() {
-        $(".arrow").animate({"opacity" : "0", "bottom" : 3*parseInt($('.arrow').css('bottom'))/5}, 200, function() {
-            $(".arrow").css("visibility", "hidden");
-        });
-        $(".info").animate({"padding-top":"3em"}, 500);
-        setTimeout(function() {
-            $("section, footer").css("height", "auto").css("visibility", "visible").animate({"opacity" : "1"}, 500);
-        }, 200);
-        setTimeout(function() {
-            $('body, html').css("overflow-y", "visible");
-        }, 700);
-        $(window).unbind('mousewheel DOMMouseScroll touchmove', handler);
-    }
-
-    var handler = function(event){
-        event.preventDefault();
-        event.stopPropagation();
-        doScroll();
-    };
-    $(window).bind('mousewheel DOMMouseScroll touchmove', handler);
-    $(".arrow").click(doScroll);
-
     function shuffleArray(array) {
         for (var i = array.length - 1; i > 0; i--) {
             var j = Math.floor(Math.random() * (i + 1));
@@ -36,6 +8,7 @@ $(function() {
         }
         return array;
     }
+
     var techs = [];
     $('.project > a').each(function() {
         $.each($(this).data('technologies').split(', '), function() {
@@ -45,10 +18,13 @@ $(function() {
             }
         });
     });
+
     techs = shuffleArray(techs);
+
     $.each(techs, function() {
         $('.skill-container').append(this);
     });
+
     $('.project > a').hover(function() {
         var proj = $(this);
         $.each(proj.data('technologies').split(', '), function() {
@@ -60,10 +36,10 @@ $(function() {
                 }
             });
         });
-
     }, function() {
         $(".skill-container").children().removeClass('highlight');
     });
+
     $('.skill-container > span').hover(function() {
         var tech = $(this).contents().text();
         $('.project > a').each(function() {
@@ -71,7 +47,6 @@ $(function() {
                 $(this).addClass('highlight');
             }
         });
-
     }, function() {
         $('.project > a').removeClass('highlight');
     });
