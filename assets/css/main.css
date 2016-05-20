@@ -31,8 +31,15 @@ html, body {
 section, footer {
     display: inline-block;
     width: 100%;
-    margin-top: 50px;
-    -webkit-transform: translateZ(0);
+    margin-top: 30px;
+}
+
+section p:last-of-type {
+    margin-bottom: 0;
+}
+
+section div ul li:last-of-type {
+    padding-bottom: 0;
 }
 
 h1 {
@@ -87,7 +94,7 @@ li {
 /* Header */
 
 .info {
-    padding-top: 3em;
+    padding-top: 25px;
     text-align: center;
 }
 
@@ -117,34 +124,19 @@ li {
 
 /* Profile */
 
-.profile {
-    margin-left: 7%;
-    margin-right: 7%;
-    width: auto;
-}
-
 .picture {
     float: left;
-    width: 35%
+    border-radius: 5%;
+    margin: 5px 35px 5px 5px;
 }
 
-.blurb {
-    float: right;
-    width: 65%;
-    margin-top: 35px;
-}
-
-.blurb p {
+#profile p {
+    margin-top: 5px;
     text-align: justify;
     color: #3a3a3a;
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.02em;
-    margin: 0;
-}
-
-.blurb span {
-    font-weight: 600;
 }
 
 /* Work */
@@ -187,6 +179,10 @@ li {
     color: #fffffa;
 }
 
+.cloud .skill-container {
+    height: 0;
+}
+
 /* About */
 
 .about p {
@@ -218,22 +214,6 @@ li {
 /* Media Queries */
 
 @media (max-width: 906px) {
-    .profile {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .picture {
-        text-align: center;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .blurb {
-        margin-top:0;
-        width: 100%;
-    }
-
     .work {
         width: 100%;
     }
@@ -302,5 +282,18 @@ li {
 
     .social a {
         font-size: 8px;
+    }
+
+    #profile {
+        text-align: center;
+    }
+
+    .picture {
+        float: none;
+        margin: 5px;
+    }
+
+    #profile p {
+        display: inline-block;
     }
 }
