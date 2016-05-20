@@ -10,7 +10,9 @@ $(function() {
     }
 
     $(document).ready(function() {
+
         var techs = [];
+
         $('.project > a').each(function() {
             $.each($(this).data('technologies').split(', '), function() {
                 var el = "<span>" + this  + "</span>";
@@ -22,9 +24,7 @@ $(function() {
 
         techs = shuffleArray(techs);
 
-        $.each(techs, function() {
-            $('.skill-container').append(this);
-        });
+        $('.skill-container').append(techs);
 
         $('.project > a').hover(function() {
             var proj = $(this);
