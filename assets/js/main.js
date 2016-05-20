@@ -9,45 +9,47 @@ $(function() {
         return array;
     }
 
-    var techs = [];
-    $('.project > a').each(function() {
-        $.each($(this).data('technologies').split(', '), function() {
-            var el = "<span>" + this  + "</span>";
-            if((techs.indexOf("<span>" + this  + "</span>")) < 0) {
-                techs.push(el);
-            }
-        });
-    });
-
-    techs = shuffleArray(techs);
-
-    $.each(techs, function() {
-        $('.skill-container').append(this);
-    });
-
-    $('.project > a').hover(function() {
-        var proj = $(this);
-        $.each(proj.data('technologies').split(', '), function() {
-            var p = this.toString();
-            $(".skill-container").children().each(function() {
-                var k = $(this).contents().text();
-                if(p == k) {
-                    $(this).addClass('highlight');
+    $(document).ready(function() {
+        var techs = [];
+        $('.project > a').each(function() {
+            $.each($(this).data('technologies').split(', '), function() {
+                var el = "<span>" + this  + "</span>";
+                if((techs.indexOf("<span>" + this  + "</span>")) < 0) {
+                    techs.push(el);
                 }
             });
         });
-    }, function() {
-        $(".skill-container").children().removeClass('highlight');
-    });
 
-    $('.skill-container > span').hover(function() {
-        var tech = $(this).contents().text();
-        $('.project > a').each(function() {
-            if($(this).data('technologies').split(', ').indexOf(tech) > -1) {
-                $(this).addClass('highlight');
-            }
+        techs = shuffleArray(techs);
+
+        $.each(techs, function() {
+            $('.skill-container').append(this);
         });
-    }, function() {
-        $('.project > a').removeClass('highlight');
+
+        $('.project > a').hover(function() {
+            var proj = $(this);
+            $.each(proj.data('technologies').split(', '), function() {
+                var p = this.toString();
+                $(".skill-container").children().each(function() {
+                    var k = $(this).contents().text();
+                    if(p == k) {
+                        $(this).addClass('highlight');
+                    }
+                });
+            });
+        }, function() {
+            $(".skill-container").children().removeClass('highlight');
+        });
+
+        $('.skill-container > span').hover(function() {
+            var tech = $(this).contents().text();
+            $('.project > a').each(function() {
+                if($(this).data('technologies').split(', ').indexOf(tech) > -1) {
+                    $(this).addClass('highlight');
+                }
+            });
+        }, function() {
+            $('.project > a').removeClass('highlight');
+        });
     });
 });
