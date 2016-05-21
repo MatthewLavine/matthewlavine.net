@@ -2,6 +2,10 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        clean: {
+            css: ['public/css/*.css'],
+            js: ['public/js/*.js']
+        },
         concat: {
             css: {
                 src: 'assets/css/main.css',
@@ -26,6 +30,22 @@ module.exports = function (grunt) {
                 }
             }
         },
+        copy: {
+            main: {
+                expand: true,
+                flatten: true,
+                src: 'assets/html/index.html',
+                dest: 'public/'
+            }
+        },
+        cacheBust: {
+            options: {
+                baseDir: 'public/',
+                assets: ['js/main.min.js', 'css/main.min.css'],
+                deleteOriginals: true
+            },
+            src: ['public/index.html']
+        },
         htmlmin: {
             options: {
                 removeComments: true,
@@ -33,7 +53,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    'public/index.html': 'assets/html/index.html'
+                    'public/index.html': 'public/index.html'
                 }
             }
         },
@@ -50,26 +70,24 @@ module.exports = function (grunt) {
         watch: {
             scripts: {
                 files: ['assets/**/*'],
-                tasks: ['concat', 'uglify', 'cssmin', 'htmlmin', 'imagemin', 'clean'],
+                tasks: ['clean', 'concat', 'uglify', 'cssmin', 'copy', 'cacheBust', 'htmlmin', 'imagemin'],
                 options: {
                     spawn: false
                 }
             }
-        },
-        clean: {
-            css: ['public/css/*.css', '!public/css/*.min.css'],
-            js: ['public/js/*.js', '!public/js/*.min.js' ]
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-cache-bust');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
-    grunt.registerTask('build', ['concat', 'uglify', 'cssmin', 'htmlmin', 'imagemin', 'clean']);
+    grunt.registerTask('build', ['clean', 'concat', 'uglify', 'cssmin', 'copy', 'cacheBust', 'htmlmin', 'imagemin']);
 
 };
