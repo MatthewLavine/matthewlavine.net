@@ -6,27 +6,17 @@ module.exports = function (grunt) {
             css: ['public/css/*.css'],
             js: ['public/js/*.js']
         },
-        concat: {
-            css: {
-                src: 'assets/css/main.css',
-                dest: 'public/css/main.css'
-            },
-            js: {
-                src: 'assets/js/main.js',
-                dest: 'public/js/main.js'
-            }
-        },
         uglify: {
             dist: {
                 files: {
-                    'public/js/main.min.js': ['public/js/main.js']
+                    'public/js/main.min.js': ['assets/js/main.js']
                 }
             }
         },
         cssmin: {
             dist: {
                 files: {
-                    'public/css/main.min.css': ['public/css/main.css']
+                    'public/css/main.min.css': ['assets/css/main.css']
                 }
             }
         },
@@ -70,7 +60,7 @@ module.exports = function (grunt) {
         watch: {
             scripts: {
                 files: ['assets/**/*'],
-                tasks: ['clean', 'concat', 'uglify', 'cssmin', 'copy', 'cacheBust', 'htmlmin', 'imagemin'],
+                tasks: ['clean', 'uglify', 'cssmin', 'copy', 'cacheBust', 'htmlmin', 'imagemin'],
                 options: {
                     spawn: false
                 }
@@ -88,6 +78,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');
 
-    grunt.registerTask('build', ['clean', 'concat', 'uglify', 'cssmin', 'copy', 'cacheBust', 'htmlmin', 'imagemin']);
+    grunt.registerTask('build', ['clean', 'uglify', 'cssmin', 'copy', 'cacheBust', 'htmlmin', 'imagemin']);
 
 };
