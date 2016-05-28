@@ -1,7 +1,7 @@
 (function() {
     var projects = document.querySelectorAll(".project > a");
 
-    projects = Array.from(projects);
+    projects = Array.prototype.slice.call(projects);
 
     var uniqueTechnologies = [];
 
@@ -28,7 +28,7 @@
 
     var technologies = document.querySelectorAll(".skill-container > span");
 
-    technologies = Array.from(technologies);
+    technologies = Array.prototype.slice.call(technologies);
 
     projects.forEach(function(project) {
         project.addEventListener("mouseover", function() {
