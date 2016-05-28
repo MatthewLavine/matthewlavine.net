@@ -1,45 +1,21 @@
 (function() {
-    var rawProjects = document.querySelectorAll(".project > a"),
-        uniqueTechnologies = [];
+    var projects = document.querySelectorAll(".project > a");
 
-    for (var i = 0; i < rawProjects.length; i++) {
-        var technologies = rawProjects[i].dataset.technologies.split(", ");
+    projects = Array.from(projects);
 
-        for(var j = 0; j < technologies.length; j++) {
-            var technology = "<span>" +  technologies[j]  + "</span>";
+    var uniqueTechnologies = [];
 
-            if((uniqueTechnologies.indexOf(technology)) == -1) {
-                uniqueTechnologies.push(technology);
+    projects.forEach(function(project) {
+        var projectTechnologies = project.dataset.technologies.split(", ");
+
+        projectTechnologies.forEach(function(technology) {
+            var skillContainer = document.querySelector(".skill-container");
+            
+            if(skillContainer.innerHTML.indexOf(technology) == -1) {
+                uniqueTechnologies.push("<span>" + technology + "</span>");
             }
-        }
-
-        rawProjects[i].onmouseover = function() {
-            var hoverTechnologies = this.dataset.technologies.split(", ");
-
-            var spanTechnologies = document.querySelectorAll(".skill-container > span");
-
-            for(var k = 0; k < hoverTechnologies.length; k++) {
-                var hoverTechnology = hoverTechnologies[k];
-
-                for(var l = 0; l < spanTechnologies.length; l++) {
-                    var technologyEl = spanTechnologies[l];
-                    var technologyString = technologyEl.innerHTML;
-
-                    if( hoverTechnology == technologyString) {
-                        technologyEl.classList = 'highlight';
-                    }
-                }
-            }
-        };
-
-        rawProjects[i].onmouseout  = function() {
-            var spanTechnologies = document.querySelectorAll(".skill-container > span");
-
-            for(var k = 0; k < spanTechnologies.length; k++) {
-                spanTechnologies[k].classList = '';
-            }
-        };
-    }
+        });
+    });
 
     for (var i = uniqueTechnologies.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
@@ -50,26 +26,45 @@
 
     document.querySelector(".skill-container").innerHTML = uniqueTechnologies.join("");
 
-    var spanTechnologies = document.querySelectorAll(".skill-container > span");
+    var technologies = document.querySelectorAll(".skill-container > span");
 
-    for(var i = 0; i < spanTechnologies.length; i++) {
+    technologies = Array.from(technologies);
 
-        spanTechnologies[i].onmouseover = function() {
-            var technologyString = this.innerHTML;
+    projects.forEach(function(project) {
+        project.addEventListener("mouseover", function() {
+            var projectTechnologies = project.dataset.technologies.split(", ");
 
-            for(var j = 0; j < rawProjects.length; j++) {
-                var projectTechnologies = rawProjects[j].dataset.technologies.split(", ");
+            projectTechnologies.forEach(function(projectTechnology) {
+                technologies.forEach(function(technology) {
+                    if(projectTechnology == technology.innerHTML) {
+                        technology.classList.add("highlight");
+                    }
+                });
+            });
+        });
 
-                if(projectTechnologies.indexOf(technologyString) != -1) {
-                    rawProjects[j].classList = 'highlight';
+        project.addEventListener("mouseout", function() {
+            technologies.forEach(function(technology) {
+                technology.classList.remove("highlight");
+            });
+        });
+    });
+
+    technologies.forEach(function(technology) {
+        technology.addEventListener("mouseover", function() {
+            projects.forEach(function(project) {
+                var projectTechnologies = project.dataset.technologies.split(", ");
+
+                if(projectTechnologies.indexOf(technology.innerHTML) != -1) {
+                    project.classList.add("highlight");
                 }
-            }
-        };
+            });
+        });
 
-        spanTechnologies[i].onmouseout  = function() {
-            for(var i = 0; i < rawProjects.length; i++) {
-                rawProjects[i].classList = '';
-            }
-        };
-    }
+        technology.addEventListener("mouseout", function() {
+            projects.forEach(function(project) {
+                project.classList.remove("highlight");
+            });
+        });
+    });
 })();
