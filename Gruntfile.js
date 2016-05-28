@@ -12,7 +12,7 @@ module.exports = function (grunt) {
                 dest: 'public/css/main.css'
             },
             js: {
-                src: ['bower_components/jquery/dist/jquery.js', 'assets/js/main.js'],
+                src: 'assets/js/main.js',
                 dest: 'public/js/main.js'
             }
         },

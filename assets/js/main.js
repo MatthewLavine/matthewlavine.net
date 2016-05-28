@@ -1,55 +1,75 @@
-$(function() {
-    function shuffleArray(array) {
-        for (var i = array.length - 1; i > 0; i--) {
-            var j = Math.floor(Math.random() * (i + 1));
-            var temp = array[i];
-            array[i] = array[j];
-            array[j] = temp;
+(function() {
+    var rawProjects = document.querySelectorAll(".project > a"),
+        uniqueTechnologies = [];
+
+    for (var i = 0; i < rawProjects.length; i++) {
+        var technologies = rawProjects[i].dataset.technologies.split(", ");
+
+        for(var j = 0; j < technologies.length; j++) {
+            var technology = "<span>" +  technologies[j]  + "</span>";
+
+            if((uniqueTechnologies.indexOf(technology)) == -1) {
+                uniqueTechnologies.push(technology);
+            }
         }
-        return array;
+
+        rawProjects[i].onmouseover = function() {
+            var hoverTechnologies = this.dataset.technologies.split(", ");
+
+            var spanTechnologies = document.querySelectorAll(".skill-container > span");
+
+            for(var k = 0; k < hoverTechnologies.length; k++) {
+                var hoverTechnology = hoverTechnologies[k];
+
+                for(var l = 0; l < spanTechnologies.length; l++) {
+                    var technologyEl = spanTechnologies[l];
+                    var technologyString = technologyEl.innerHTML;
+
+                    if( hoverTechnology == technologyString) {
+                        technologyEl.classList = 'highlight';
+                    }
+                }
+            }
+        };
+
+        rawProjects[i].onmouseout  = function() {
+            var spanTechnologies = document.querySelectorAll(".skill-container > span");
+
+            for(var k = 0; k < spanTechnologies.length; k++) {
+                spanTechnologies[k].classList = '';
+            }
+        };
     }
 
-    $(document).ready(function() {
+    for (var i = uniqueTechnologies.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = uniqueTechnologies[i];
+        uniqueTechnologies[i] = uniqueTechnologies[j];
+        uniqueTechnologies[j] = temp;
+    }
 
-        var techs = [];
+    document.querySelector(".skill-container").innerHTML = uniqueTechnologies.join("");
 
-        $('.project > a').each(function() {
-            $.each($(this).data('technologies').split(', '), function() {
-                var el = "<span>" + this  + "</span>";
-                if((techs.indexOf("<span>" + this  + "</span>")) < 0) {
-                    techs.push(el);
+    var spanTechnologies = document.querySelectorAll(".skill-container > span");
+
+    for(var i = 0; i < spanTechnologies.length; i++) {
+
+        spanTechnologies[i].onmouseover = function() {
+            var technologyString = this.innerHTML;
+
+            for(var j = 0; j < rawProjects.length; j++) {
+                var projectTechnologies = rawProjects[j].dataset.technologies.split(", ");
+
+                if(projectTechnologies.indexOf(technologyString) != -1) {
+                    rawProjects[j].classList = 'highlight';
                 }
-            });
-        });
+            }
+        };
 
-        techs = shuffleArray(techs);
-
-        $('.skill-container').append(techs);
-
-        $('.project > a').hover(function() {
-            var proj = $(this);
-            $.each(proj.data('technologies').split(', '), function() {
-                var p = this.toString();
-                $(".skill-container").children().each(function() {
-                    var k = $(this).contents().text();
-                    if(p == k) {
-                        $(this).addClass('highlight');
-                    }
-                });
-            });
-        }, function() {
-            $(".skill-container").children().removeClass('highlight');
-        });
-
-        $('.skill-container > span').hover(function() {
-            var tech = $(this).contents().text();
-            $('.project > a').each(function() {
-                if($(this).data('technologies').split(', ').indexOf(tech) > -1) {
-                    $(this).addClass('highlight');
-                }
-            });
-        }, function() {
-            $('.project > a').removeClass('highlight');
-        });
-    });
-});
+        spanTechnologies[i].onmouseout  = function() {
+            for(var i = 0; i < rawProjects.length; i++) {
+                rawProjects[i].classList = '';
+            }
+        };
+    }
+})();
