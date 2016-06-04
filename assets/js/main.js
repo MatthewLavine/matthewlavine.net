@@ -9,10 +9,10 @@
         var projectTechnologies = project.dataset.technologies.split(", ");
 
         projectTechnologies.forEach(function(technology) {
-            var skillContainer = document.querySelector(".skill-container");
-            
-            if(skillContainer.innerHTML.indexOf(technology) == -1) {
-                uniqueTechnologies.push("<span>" + technology + "</span>");
+            var technologyElement = "<span>" + technology + "</span>";
+
+            if(uniqueTechnologies.indexOf(technologyElement) == -1) {
+                uniqueTechnologies.push(technologyElement);
             }
         });
     });
