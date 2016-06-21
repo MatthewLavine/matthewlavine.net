@@ -15,22 +15,7 @@
                 uniqueTechnologies.push(technologyElement);
             }
         });
-    });
 
-    for (var i = uniqueTechnologies.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var temp = uniqueTechnologies[i];
-        uniqueTechnologies[i] = uniqueTechnologies[j];
-        uniqueTechnologies[j] = temp;
-    }
-
-    document.querySelector(".skill-container").innerHTML = uniqueTechnologies.join("");
-
-    var technologies = document.querySelectorAll(".skill-container > span");
-
-    technologies = Array.prototype.slice.call(technologies);
-
-    projects.forEach(function(project) {
         project.addEventListener("mouseover", function() {
             var projectTechnologies = project.dataset.technologies.split(", ");
 
@@ -49,6 +34,19 @@
             });
         });
     });
+
+    for (var i = uniqueTechnologies.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = uniqueTechnologies[i];
+        uniqueTechnologies[i] = uniqueTechnologies[j];
+        uniqueTechnologies[j] = temp;
+    }
+
+    document.querySelector(".skill-container").innerHTML = uniqueTechnologies.join("");
+
+    var technologies = document.querySelectorAll(".skill-container > span");
+
+    technologies = Array.prototype.slice.call(technologies);
 
     technologies.forEach(function(technology) {
         technology.addEventListener("mouseover", function() {
