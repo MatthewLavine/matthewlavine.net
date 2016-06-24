@@ -32,7 +32,7 @@ gulp.task('css', function () {
         .pipe(gulp.dest('public/css/'));
 });
 
-gulp.task('img', function() {
+gulp.task('optimize', function() {
         gulp.src('assets/img/*')
             .pipe(imagemin())
             .pipe(gulp.dest('public/img/'))
@@ -54,4 +54,4 @@ gulp.task('watch', function () {
 
 gulp.task('default', ['clean:js', 'clean:css', 'js', 'css', 'html']);
 
-gulp.task('img', ['img']);
+gulp.task('img', ['optimize']);
