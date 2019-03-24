@@ -46,15 +46,12 @@ function html() {
         .pipe(gulp.dest('public/'));
 };
 
-function watch() {
-    gulp.watch("./assets/css/**/*", gulp.series(cleancss, css));
-    gulp.watch("./assets/html/**/*", html);
-    gulp.watch("./assets/img/**/*", img);
-    gulp.watch("./assets/js/**/*", gulp.series(cleanjs, js));
-}
-
 const clean = gulp.parallel(cleancss, cleanjs);
 const build = gulp.series(clean, gulp.parallel(css, js, html, img));
+
+function watch() {
+    gulp.watch("./assets/**/*", build);
+}
 
 exports.images = img;
 exports.css = css;
