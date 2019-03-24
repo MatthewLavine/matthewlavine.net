@@ -183,23 +183,6 @@ li {
     height: 0;
 }
 
-/* About */
-
-.about p {
-    color: #3a3a3a;
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: 0.02em;
-}
-
-.about span {
-    font-weight: 600;
-}
-
-.bio {
-    text-align: justify;
-}
-
 /* Footer */
 
 .copyright {
@@ -238,10 +221,6 @@ li {
     .social a {
         padding-right: 0;
     }
-
-    .bio {
-        width: 100%;
-    }
 }
 
 @media (max-width: 570px) {
@@ -264,12 +243,16 @@ li {
     .social a {
         padding-right: 0;
     }
+
+    .picture {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
-    h1 {
+   /* h1 {
         font-size: 25px;
-    }
+    }*/
 
     .info h2 {
         font-size: 9px;
@@ -286,11 +269,6 @@ li {
 
     #profile {
         text-align: center;
-    }
-
-    .picture {
-        float: none;
-        margin: 5px;
     }
 
     #profile p {
