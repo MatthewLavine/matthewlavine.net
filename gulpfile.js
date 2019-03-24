@@ -1,57 +1,53 @@
-var gulp = require('gulp');
-var del = require('del');
-var rename = require('gulp-rename');
-var uglify = require('gulp-uglify');
-var cssmin = require('gulp-cssmin');
-var imagemin = require('gulp-imagemin');
-var htmlmin = require('gulp-htmlmin');
+"use strict";
 
-gulp.task('clean:js', function () {
-    del([
-        'public/js/*.js'
+const gulp = require('gulp');
+const del = require('del');
+const rename = require('gulp-rename');
+const uglify = require('gulp-uglify');
+const cssmin = require('gulp-cssmin');
+const imagemin = require('gulp-imagemin');
+const htmlmin = require('gulp-htmlmin');
+
+function clean() {
+    return del([
+        'public/js/*.js',
+        'public/css/*.css',
     ]);
-});
+};
 
-gulp.task('clean:css', function () {
-    del([
-        'public/css/*.css'
-    ]);
-});
-
-gulp.task('js', function() {
-    gulp.src('assets/js/*.js')
+function js() {
+    return gulp.src('assets/js/*.js')
         .pipe(uglify())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('public/js/'));
-});
+};
 
-gulp.task('css', function () {
-    gulp.src('assets/css/*.css')
+function css() {
+    return gulp.src('assets/css/*.css')
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('public/css/'));
-});
+};
 
-gulp.task('optimize', function() {
-        gulp.src('assets/img/*')
+function img(){
+        return gulp.src('assets/img/*')
             .pipe(imagemin())
-            .pipe(gulp.dest('public/img/'))
-    }
-);
+            .pipe(gulp.dest('public/img/'));
+};
 
-gulp.task('html', function() {
-    gulp.src('assets/html/*.html')
+function html() {
+    return gulp.src('assets/html/*.html')
         .pipe(htmlmin({collapseWhitespace: true}))
-        .pipe(gulp.dest('public/'))
-});
+        .pipe(gulp.dest('public/'));
+};
 
-gulp.task('watch', function () {
-    gulp.watch('assets/js/*.js', ['clean:js', 'js']);
-    gulp.watch('assets/css/*.css', ['clean:css', 'css']);
-    gulp.watch('assets/html/*.html', ['html']);
-    gulp.watch('assets/img/*.jpg', ['img']);
-});
+const build = gulp.series(clean, gulp.parallel(css, js, html, img));
 
-gulp.task('default', ['clean:js', 'clean:css', 'js', 'css', 'html']);
-
-gulp.task('img', ['optimize']);
+exports.images = img;
+exports.css = css;
+exports.js = js;
+exports.html = html;
+exports.clean = clean;
+exports.build = build;
+exports.watch = build;
+exports.default = build;
