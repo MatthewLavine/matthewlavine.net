@@ -8,10 +8,15 @@ const cssmin = require('gulp-cssmin');
 const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
 
-function clean() {
+function cleancss() {
+    return del([
+        'public/css/*.css',
+    ]);
+};
+
+function cleanjs() {
     return del([
         'public/js/*.js',
-        'public/css/*.css',
     ]);
 };
 
@@ -41,6 +46,14 @@ function html() {
         .pipe(gulp.dest('public/'));
 };
 
+function watch() {
+    gulp.watch("./assets/css/**/*", gulp.series(cleancss, css));
+    gulp.watch("./assets/html/**/*", html);
+    gulp.watch("./assets/img/**/*", img);
+    gulp.watch("./assets/js/**/*", gulp.series(cleanjs, js));
+}
+
+const clean = gulp.parallel(cleancss, cleanjs);
 const build = gulp.series(clean, gulp.parallel(css, js, html, img));
 
 exports.images = img;
@@ -49,5 +62,5 @@ exports.js = js;
 exports.html = html;
 exports.clean = clean;
 exports.build = build;
-exports.watch = build;
+exports.watch = watch;
 exports.default = build;
