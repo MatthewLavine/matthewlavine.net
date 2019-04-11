@@ -142,7 +142,7 @@ li {
 
 .work {
     float: left;
-    width: 65%;
+    width: 50%;
 }
 
 .work a {
@@ -158,8 +158,8 @@ li {
 /* Cloud */
 
 .cloud {
-    float: left;
-    width: 35%;
+    float: right;
+    width: 39%;
     text-align: right;
 }
 
