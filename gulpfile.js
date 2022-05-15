@@ -23,26 +23,26 @@ function cleanjs() {
 function js() {
     return gulp.src('assets/js/*.js')
         .pipe(uglify())
-        .pipe(rename({suffix: '.min'}))
+        .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('public/js/'));
 };
 
 function css() {
     return gulp.src('assets/css/*.css')
         .pipe(cssmin())
-        .pipe(rename({suffix: '.min'}))
+        .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('public/css/'));
 };
 
-function img(){
-        return gulp.src('assets/img/*')
-            .pipe(imagemin())
-            .pipe(gulp.dest('public/img/'));
+function img() {
+    return gulp.src('assets/img/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('public/img/'));
 };
 
 function html() {
     return gulp.src('assets/html/*.html')
-        .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest('public/'));
 };
 

@@ -13,12 +13,12 @@
   },
   "homepage": "https://github.com/MatthewLavine/matthewlavine.net",
   "devDependencies": {
-    "del": "^4.1.1",
+    "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-cssmin": "^0.2.0",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^5.0.3",
-    "gulp-rename": "^1.4.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
     "gulp-uglify": "^3.0.2"
   }
 }
