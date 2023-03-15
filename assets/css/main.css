@@ -60,11 +60,12 @@ h2 {
 
 a {
     color: #3a3a3a;
-    display: inline-block;
+    display: inline;
     padding: 2px 5px 2px 5px;
     text-decoration: none;
     transition: all .175s linear;
     border-radius: 2px;
+    line-height: 25px;
 }
 
 a:hover {
