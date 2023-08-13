@@ -2,8 +2,6 @@
 
 My personal website
 
-## Frontend
-
 Start devserver with `vite` or `npm run dev`
 
 Compile with `vite build` or `npm run build`
