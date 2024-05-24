@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  www:
+    image: nginx:latest
+    ports:
+      - 8080:80
+    volumes:
+      - ./dist:/usr/share/nginx/html
+    restart: always
+  dev:
+    image: nginx:latest
+    ports:
+      - 8081:80
+    volumes:
+      - ./dist:/usr/share/nginx/html
+    restart: always
