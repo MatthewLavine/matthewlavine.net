@@ -1,15 +1,10 @@
+# $ docker compose -f compose-www.yaml up -d
+
 services:
   www:
     image: nginx:latest
     ports:
       - 5050:80
-    volumes:
-      - ./dist:/usr/share/nginx/html
-    restart: always
-  dev:
-    image: nginx:latest
-    ports:
-      - 5051:80
     volumes:
       - ./dist:/usr/share/nginx/html
     restart: always

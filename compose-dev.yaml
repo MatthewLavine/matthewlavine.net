@@ -1,0 +1,10 @@
+# $ docker compose -f compose-dev.yaml up -d
+
+services:
+  dev:
+    image: nginx:latest
+    ports:
+      - 5051:80
+    volumes:
+      - ./dist:/usr/share/nginx/html
+    restart: always
