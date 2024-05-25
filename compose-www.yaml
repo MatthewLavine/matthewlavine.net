@@ -7,4 +7,6 @@ services:
       - 5050:80
     volumes:
       - ./dist:/usr/share/nginx/html
+    environment:
+      - NGINX_ENTRYPOINT_QUIET_LOGS=1
     restart: always
