@@ -6,7 +6,10 @@ body {
   padding: 0;
 }
 
-::selection,
+::selection {
+  background: #ffb7b7;
+}
+
 ::-moz-selection {
   background: #ffb7b7;
 }
