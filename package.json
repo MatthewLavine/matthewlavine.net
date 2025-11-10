@@ -18,7 +18,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@eslint/css": "^0.13.0",
+    "@eslint/css": "^0.14.0",
     "@eslint/js": "^9.38.0",
     "@eslint/markdown": "^7.4.0",
     "eslint": "^9.39.0",
