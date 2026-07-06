@@ -20,7 +20,7 @@
   "devDependencies": {
     "@eslint/css": "^1.3.0",
     "@eslint/js": "^10.0.1",
-    "@eslint/markdown": "^8.0.2",
+    "@eslint/markdown": "^8.0.3",
     "eslint": "^10.5.0",
     "globals": "^17.6.0",
     "vite": "^8.0.16"
